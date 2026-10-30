@@ -1,0 +1,430 @@
+{
+ "meta": {
+  "proyecto": "REMPLAST-Q",
+  "documento": "requisitos_aei_pgc_2026",
+  "version": "v1",
+  "fecha": "2026-10-18",
+  "idioma": "es",
+  "autoria": "Lázaro López Paz, El Prat de Llobregat, Barcelona, España, con asistencia de inteligencia artificial; ORCID 0000-0001-8601-1963",
+  "fuente_principal": "texto completo de la Resolución AEI de 30-09-2026, descargado de aei.gob.es (MD5 13e0dbbb379421605c78cea7a4b86210)",
+  "leyenda_verificacion": "estado_verificacion: TC=cifra comprobada en texto completo; RES=solo resumen/abstract; SEC=fuente secundaria (reseña que cita a otro); COM=fuente comercial/proveedor; FRAG=fragmento de buscador o página no leída completa; OFI=texto oficial (EUR-Lex/BOE); EST=estimación propia justificada",
+  "nota": "art. = artículo de la convocatoria 2026; todo lo marcado OFI está leído en el texto oficial"
+ },
+ "objetivo": [
+  "recoger los requisitos verificados de la convocatoria AEI PGC 2026 aplicables a REMPLAST-Q"
+ ],
+ "datos_clave": [
+  {
+   "id": "plazo",
+   "dato": "solicitudes del 3-11-2026 al 24-11-2026 a las 14:00 (hora peninsular, Europe/Madrid); plazo único para IP y representante legal (art. 17.1)",
+   "refs": [
+    "aei_conv2026",
+    "aei2026",
+    "aei_web2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "dotacion",
+   "dato": "724.000.000 € (art. 15), con posible ampliación de hasta 50.000.000 €",
+   "refs": [
+    "aei_conv2026",
+    "aei2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "bases",
+   "dato": "Orden CNU/671/2026, de 29 de junio (BOE 3-7-2026); BDNS 918664",
+   "refs": [
+    "aei_conv2026",
+    "aei2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "beneficiarios",
+   "dato": "OPI; universidades públicas e institutos universitarios; universidades privadas con I+D; entidades sanitarias; IIS acreditados; Centros Tecnológicos y CAIT inscritos (RD 2093/2008); otros centros públicos de I+D con personalidad jurídica; centros privados de I+D sin ánimo de lucro (art. 7.1); deben cumplir la definición de organismo de investigación (art. 7.5)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "modalidades",
+   "dato": "Investigación No Orientada o Investigación Orientada (prioridades del anexo III) (art. 2.1, 10.1)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "tipos",
+   "dato": "tipo A (jóvenes: doctorado entre 1-1-2016 y 31-12-2024, no IP >1 año antes) y tipo B (consolidados); dentro de B: RTA e I (art. 2.2, 8.3, 10.3)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "forma_ejecucion",
+   "dato": "individual (1 o 2 IP) o coordinado (2–6 subproyectos; coordinador no puede ser tipo A) (art. 10.2, 10.5)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "ip_doctorado",
+   "dato": "IP con doctorado obtenido antes del 1-1-2025; excepción: IP vinculado a Centro Tecnológico o CAIT puede ser titulado con ≥5 años de experiencia en I+D (solo tipo B/RTA) (art. 8.2.a)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "ip_vinculacion",
+   "dato": "IP con relación funcionarial, estatutaria, laboral u otro vínculo profesional con la entidad solicitante u otra entidad elegible que lo autorice, desde el cierre del plazo hasta el fin del proyecto; vale la expectativa de contratación por proceso selectivo público (art. 8.2.b)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "ip_incompatibilidades",
+   "dato": "un IP no puede figurar en otra solicitud de la convocatoria; incompatibilidad con proyectos del anexo V vigentes después del 31-8-2027 (art. 8.2.d)",
+   "refs": [
+    "aei_conv2026",
+    "aei_correccion2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "equipo_investigacion",
+   "dato": "doctor o titulado universitario, con vinculación (art. 8.2.b 1.º y 3.º); máximo 2 solicitudes por persona (art. 9.1)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "equipo_trabajo",
+   "dato": "personas sin vinculación, predoctorales, técnicos o investigadores extranjeros; deben figurar en el formulario y la memoria; no pueden ser responsables de objetivos ni tareas (art. 9.3)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "duracion",
+   "dato": "3 o 4 años; 2 años solo de forma excepcional y justificada; inicio no anterior al 1-9-2027 (art. 10.4)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "presupuesto",
+   "dato": "solo costes marginales; hasta el 100 % de lo solicitado; costes indirectos fijos del 25 % sobre los directos; no hay tope por proyecto en el texto (art. 11.1, 11.4, 14.2)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "costes_no_elegibles",
+   "dato": "contratación del IP y del equipo de investigación; personal propio de capítulo I en entidades públicas; material de oficina; números especiales de revistas (art. 11.3)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "subcontratacion",
+   "dato": "hasta el 25 % de la ayuda, ampliable con justificación (art. 11.3.q)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "predoctoral",
+   "dato": "ayuda predoctoral opcional asociada: 143.350 € (32.500 €/año de contrato + 3.350 € de indemnización + 10.000 € para estancias y matrícula) (art. 14.3)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "memoria_extension",
+   "dato": "máximo 20 páginas (individual A/B/RTA) o 35 (coordinado); la aplicación rechaza memorias más largas (art. 18.2.a; anexo VII)",
+   "refs": [
+    "aei_conv2026",
+    "aei_web2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "memoria_formato",
+   "dato": "recomendado Times New Roman, Calibri o Arial ≥11 pt; márgenes laterales 2,5 cm y superior/inferior 1,5 cm; interlineado sencillo; PDF ≤4 MB (art. 6.2, 18.2.a)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "memoria_idioma",
+   "dato": "inglés obligatorio si los costes directos solicitados son ≥100.000 €; en otro caso español o inglés (inglés recomendado) (art. 18.2.a)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "memoria_estructura",
+   "dato": "1 Datos de la propuesta; 2 Justificación y novedad; 3 Objetivos, metodología y plan de trabajo; 4 Impacto esperado; 5 Justificación del presupuesto; 6 Capacidad formativa (si se pide predoctoral); 7 Condiciones específicas (anexo IV, si procede) (anexo VII)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "memoria_restriccion",
+   "dato": "no se pueden incluir en la memoria actividades de entidades que no participan en el proyecto (anexo VII)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "cva",
+   "dato": "CVA de cada IP, modelo AEI o generado como «CVA (AEI)» en el editor CVN de FECYT; máximo 4 páginas; español o inglés (art. 18.2.b)",
+   "refs": [
+    "aei_conv2026",
+    "fecyt_cvn"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "formulario",
+   "dato": "modalidad y tipo; área y subárea (anexo II); prioridad (si es orientada); resumen ES/EN; datos y ORCID de IP y equipos; méritos del equipo; presupuesto por partidas (en inglés recomendado si ≥100.000 €) (art. 18.1)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "registros",
+   "dato": "IP y representante legal inscritos en el RUS; entidad en SISEN; firma electrónica avanzada del representante (art. 6.7–6.9, 17.2–17.3)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "evaluacion_orientada",
+   "dato": "Orientada: 1 Calidad y viabilidad 0–45 (umbral 30; 1.1 calidad 0–25, 1.2 viabilidad 0–20); 2 Equipo 0–30 (umbral 20); 3 Impacto 0–25 (umbral 15) (anexo I)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "evaluacion_no_orientada",
+   "dato": "No orientada: 1 Calidad y viabilidad 0–55 (umbral 40; 1.1 0–30, 1.2 0–25); 2 Equipo 0–30 (umbral 20); 3 Impacto 0–15 (umbral 5) (anexo I)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "resolucion",
+   "dato": "plazo máximo de 6 meses desde el fin del plazo de solicitudes, suspendible hasta 3 meses durante la evaluación (art. 20)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "acceso_abierto",
+   "dato": "publicaciones y datos en acceso abierto; plan de gestión de datos FAIR depositado; datos depositados antes de 2 años tras el fin del proyecto; incumplimiento → reintegro de hasta el 10 % (art. 23.3.a)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "plantillas_2026",
+   "dato": "modelos 2026 de memoria y CVA no publicados en la web AEI a 18-10-2026; se usa la estructura del anexo VII 2026 y los epígrafes del modelo 2025",
+   "refs": [
+    "aei_web2026",
+    "aei_instr2025"
+   ],
+   "estado_verificacion": "fragmento_busqueda"
+  }
+ ],
+ "area_tematica": [
+  {
+   "id": "recomendada",
+   "texto": "modalidad Investigación Orientada, prioridad 8 «Alimentación, bioeconomía, recursos naturales, agricultura, clima y medioambiente»; área CTM Ciencias y tecnologías medioambientales, subárea TMA Tecnologías medioambientales",
+   "estado": "propuesta",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "alternativa_1",
+   "texto": "área CTQ Ciencias y tecnologías químicas, subárea IQM Ingeniería química (si el IP es de ingeniería química)",
+   "estado": "alternativa",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "alternativa_2",
+   "texto": "subárea CTA Ciencias de la Tierra y del agua (si el enfoque es más ambiental que tecnológico)",
+   "estado": "alternativa",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "justificacion",
+   "texto": "la modalidad orientada da más peso al impacto (25 puntos) y encaja con la Directiva 2024/3019; el órgano instructor puede cambiar el área de oficio (art. 18.1.b)",
+   "estado": "propuesta",
+   "refs": [
+    "aei_conv2026",
+    "uwwtd2024"
+   ]
+  }
+ ],
+ "bloqueante_afiliacion": {
+  "estado": "bloqueante",
+  "texto": "Lázaro López Paz, sin afiliación institucional, no puede ser IP ni miembro del equipo de investigación: ambos exigen vinculación con una entidad elegible y el IP además doctorado anterior al 1-1-2025 (art. 8.2.a–b, 9.1.b). Solo puede figurar en el equipo de trabajo (art. 9.3.a), sin ser responsable de objetivos ni tareas.",
+  "refs": [
+   "aei_conv2026"
+  ]
+ },
+ "opciones_afiliacion": [
+  {
+   "id": "o1_ip_externo",
+   "texto": "buscar un/a IP doctor/a vinculado/a a una entidad elegible que asuma el proyecto como propio (tipo B, o tipo A si cumple las fechas); Lázaro participa en el equipo de trabajo",
+   "estado": "recomendada",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "o2_vinculacion",
+   "texto": "que Lázaro obtenga una vinculación profesional con una entidad elegible antes del 24-11-2026 (contrato u otro vínculo que la entidad certifique); entonces podría estar en el equipo de investigación; si además fuera doctor antes del 1-1-2025, podría ser IP o co-IP. Si una figura como «colaborador honorífico» cuenta como vínculo no está confirmado: preguntar a la AEI por el formulario AURIA",
+   "estado": "depende_de_entidad",
+   "refs": [
+    "aei_conv2026",
+    "aei_web2026"
+   ]
+  },
+  {
+   "id": "o3_centro_tecnologico",
+   "texto": "en un Centro Tecnológico o CAIT inscrito, el IP de tipo B puede ser titulado no doctor con ≥5 años de experiencia en I+D, pero debe seguir vinculado a ese centro",
+   "estado": "solo_con_vinculacion",
+   "refs": [
+    "aei_conv2026",
+    "dir_ct"
+   ]
+  },
+  {
+   "id": "o4_contrato_futuro",
+   "texto": "si se concede, el proyecto puede contratar personal técnico (no IP ni equipo de investigación) desde el inicio (≥1-9-2027) con el proceso de selección de la entidad; no se puede garantizar a una persona concreta",
+   "estado": "informativo",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "o5_aplazar",
+   "texto": "si no hay IP a tiempo, preparar la propuesta para la convocatoria siguiente u otras vías (CDTI con empresa; LIFE 2027 en consorcio) — ver 04_plan_proyecto",
+   "estado": "plan_b",
+   "refs": [
+    "cdti_pid",
+    "life2026"
+   ]
+  }
+ ],
+ "tareas": [
+  {
+   "id": "t1",
+   "texto": "elegir 3–5 grupos y enviar el correo-plantilla (lo envía el usuario)",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "t2",
+   "texto": "confirmar IP, entidad y tipo A/B antes del 30-10-2026",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t3",
+   "texto": "preguntar a la AEI por AURIA si la figura de colaborador honorífico cuenta como vinculación",
+   "estado": "pendiente_usuario",
+   "refs": [
+    "aei_web2026"
+   ]
+  }
+ ],
+ "riesgos": [
+  {
+   "id": "r1",
+   "texto": "sin IP vinculado no hay solicitud",
+   "estado": "",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "plazo corto (≈5 semanas); las oficinas de investigación suelen fijar plazos internos anteriores al 24-11 (fecha \"\")",
+   "estado": "",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "memoria en inglés obligatoria si los costes directos son ≥100.000 €",
+   "estado": "",
+   "refs": [
+    "aei_conv2026"
+   ]
+  }
+ ],
+ "decisiones": [
+  {
+   "id": "dp2",
+   "texto": "convocatoria: AEI PGC 2026 solicitada por universidad u organismo público",
+   "estado": "resuelta_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp2b",
+   "texto": "modalidad orientada (recomendada) o no orientada",
+   "estado": "pendiente_usuario_e_ip",
+   "refs": []
+  },
+  {
+   "id": "dp2c",
+   "texto": "tipo A o B según el perfil del IP",
+   "estado": "pendiente_ip",
+   "refs": []
+  },
+  {
+   "id": "dp2d",
+   "texto": "solicitar o no ayuda predoctoral",
+   "estado": "pendiente_ip",
+   "refs": []
+  }
+ ],
+ "proximo_paso": [
+  "contactar grupos esta semana (19–23-10-2026) para tener IP confirmado el 30-10-2026"
+ ]
+}

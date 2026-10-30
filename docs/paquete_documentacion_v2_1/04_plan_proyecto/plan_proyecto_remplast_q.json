@@ -1,0 +1,707 @@
+{
+ "meta": {
+  "proyecto": "REMPLAST-Q",
+  "usuario": "Lázaro López Paz",
+  "documento": "plan_proyecto_remplast_q",
+  "version": "v1",
+  "fecha": "2026-10-18",
+  "idioma": "es",
+  "duracion_propuesta": "36 meses, del 1-9-2027 al 31-8-2030 (la AEI permite 3 o 4 años y no admite inicio antes del 1-9-2027)",
+  "leyenda_verificacion": "estado_verificacion: TC=cifra comprobada en texto completo; RES=solo resumen/abstract; SEC=fuente secundaria (reseña que cita a otro); COM=fuente comercial/proveedor; FRAG=fragmento de buscador o página no leída completa; OFI=texto oficial (EUR-Lex/BOE); EST=estimación propia justificada",
+  "nota": "los objetivos numéricos de KPI son propuestas (EST) basadas en la literatura citada, no resultados"
+ },
+ "objetivo": [
+  "demostrar a escala piloto en una EDAR un tren terciario que reduzca MPs ≥20 µm en el efluente, midiendo con un método alineado con la Directiva (UE) 2024/3019 y la Decisión Delegada (UE) 2024/1441",
+  "cuantificar eficiencia por etapa, transferencia al lodo y coste €/m3 para decidir el escalado",
+  "comparar arena, arena+biochar y UF (referencia) y validar una ruta térmica de lodos"
+ ],
+ "tren_recomendado": [
+  {
+   "id": "e1_existente",
+   "texto": "pretratamiento + primario + secundario existentes: retienen 95–99 % acumulado (>125 µm)",
+   "estado": "base",
+   "refs": [
+    "sccwrp2024"
+   ]
+  },
+  {
+   "id": "e2_terciario_a",
+   "texto": "coagulación ligera en línea + filtración rápida en arena: 97 % en EDAR terciario, OPEX de tren 0,08–0,12 €/m3, bajo consumo (0,097 kWh/m3)",
+   "estado": "recomendado",
+   "refs": [
+    "talvitie2017",
+    "iglesias2017",
+    "gcamejo2023",
+    "zhao2024"
+   ]
+  },
+  {
+   "id": "e2_terciario_b",
+   "texto": "variante: arena con capa de biochar: >95 % vs 60–80 % arena en laboratorio, sin datos a escala real ni de coste → objeto de innovación del proyecto",
+   "estado": "a_ensayar",
+   "refs": [
+    "wang2020",
+    "olubusoye2024"
+   ]
+  },
+  {
+   "id": "e2_referencia_c",
+   "texto": "UF terciaria como referencia de máxima retención (99,3–100 % en ETAP) y para reutilización; mayor coste (0,18 €/m3 OPEX)",
+   "estado": "referencia",
+   "refs": [
+    "npj2025",
+    "iglesias2017"
+   ]
+  },
+  {
+   "id": "e3_opcional_ec",
+   "texto": "electrocoagulación solo para corrientes concentradas (p. ej., lavanderías/industria): 92 % fibras; riesgo de fragmentación",
+   "estado": "opcional",
+   "refs": [
+    "senathirajah2023",
+    "kim2026"
+   ]
+  },
+  {
+   "id": "e4_cuarta_etapa",
+   "texto": "si la EDAR necesita 4ª etapa: ozono antes de la filtración para que el filtro retenga fragmentos; ozono no se usa como barrera de MPs por fragmentación y resistencia de PVC/PTFE (hipótesis a verificar)",
+   "estado": "condicional",
+   "refs": [
+    "wieland2025",
+    "topkaya2025",
+    "vsa2024"
+   ]
+  },
+  {
+   "id": "e5_lodos",
+   "texto": "lodo: pirólisis ≥450–500 °C (MPs en biochar ~99,6–99,9 % menos) o monoincineración con recuperación de P, frente a uso agrícola directo",
+   "estado": "recomendado",
+   "refs": [
+    "ni2020",
+    "keller2024",
+    "jrc2023sludge"
+   ]
+  }
+ ],
+ "justificacion": [
+  "las separaciones físicas maduras (arena, membranas) son las únicas con datos a escala real de >95 % [talvitie2017][npj2025]",
+  "la contraevidencia a largo plazo sobre MBR/CAP obliga a medir afluente y efluente del propio tren y no confiar en cifras de campañas cortas [sturm2025]",
+  "degradación (POA, plasma, enzimas) sigue en TRL bajo para MPs en agua y no se incluye en el piloto [tournier2020][iervolino2026]",
+  "la retención traslada MPs al lodo, por lo que el tren solo es completo con una ruta térmica de lodos [carnevale2024][ni2020]"
+ ],
+ "fases": [
+  {
+   "id": "f0_preparacion",
+   "meses": "M1–M3",
+   "actividades": [
+    "acuerdo con EDAR y laboratorio",
+    "diseño de piloto y puntos de muestreo",
+    "protocolo QA/QC y blancos de laboratorio"
+   ],
+   "hito": "h0: protocolo aprobado y ≥10 blancos de procedimiento por tipo de filtro con LOD calculado",
+   "entregable": "e0: protocolo de muestreo y análisis v1",
+   "refs": [
+    "dd2024_1441"
+   ]
+  },
+  {
+   "id": "f1_linea_base",
+   "meses": "M3–M9",
+   "actividades": [
+    "campañas en afluente, efluentes primario/secundario, agua de lavado y lodos",
+    "variabilidad estacional"
+   ],
+   "hito": "h1: línea base con eficiencia por etapa y clase de tamaño",
+   "entregable": "e1: informe de línea base + base de datos",
+   "refs": [
+    "uwwtd2024"
+   ]
+  },
+  {
+   "id": "f2_banco",
+   "meses": "M6–M15",
+   "actividades": [
+    "jar-test de coagulación",
+    "columnas arena vs arena+biochar con MPs de referencia y agua real",
+    "EC en corriente concentrada (opcional)"
+   ],
+   "hito": "h2: selección de 2 configuraciones para piloto",
+   "entregable": "e2: informe de ensayos en banco",
+   "refs": [
+    "wang2020",
+    "zhang2020"
+   ]
+  },
+  {
+   "id": "f3_piloto",
+   "meses": "M12–M30",
+   "actividades": [
+    "operación en paralelo A (arena), B (arena+biochar), C (UF referencia)",
+    "registro de energía, reactivos y lavados",
+    "pirólisis de lodo a 450/500/600 °C con socio"
+   ],
+   "hito": "h3: ≥12 meses de operación con datos de eficiencia y coste",
+   "entregable": "e3: informe de piloto y de lodos",
+   "refs": [
+    "talvitie2017",
+    "ni2020"
+   ]
+  },
+  {
+   "id": "f4_evaluacion",
+   "meses": "M27–M36",
+   "actividades": [
+    "análisis tecno-económico y ACV",
+    "plan de escalado",
+    "publicación y datos abiertos"
+   ],
+   "hito": "h4: decisión go/no-go de escalado",
+   "entregable": "e4: informe final, TEA/ACV, artículo",
+   "refs": [
+    "vuori2022"
+   ]
+  }
+ ],
+ "puntos_muestreo": [
+  {
+   "id": "p1",
+   "punto": "afluente bruto tras desbaste",
+   "matriz": "agua"
+  },
+  {
+   "id": "p2",
+   "punto": "efluente primario",
+   "matriz": "agua"
+  },
+  {
+   "id": "p3",
+   "punto": "efluente secundario = entrada piloto",
+   "matriz": "agua"
+  },
+  {
+   "id": "p4",
+   "punto": "efluente de cada línea piloto (A, B, C)",
+   "matriz": "agua"
+  },
+  {
+   "id": "p5",
+   "punto": "agua de lavado de filtros / concentrado UF",
+   "matriz": "agua"
+  },
+  {
+   "id": "l1",
+   "punto": "lodo primario",
+   "matriz": "lodo"
+  },
+  {
+   "id": "l2",
+   "punto": "lodo secundario",
+   "matriz": "lodo"
+  },
+  {
+   "id": "l3",
+   "punto": "lodo digerido/deshidratado",
+   "matriz": "lodo"
+  },
+  {
+   "id": "l4",
+   "punto": "biochar de pirólisis / cenizas",
+   "matriz": "solido"
+  }
+ ],
+ "protocolo_muestreo_analisis": [
+  {
+   "id": "muestreo_agua",
+   "texto": "filtración in situ en cascada 100 µm + 20 µm con registro de volumen; para agua potable la norma exige ≥1.000 L; en agua residual el volumen se fija en f0 según colmatación",
+   "estado": "OFI",
+   "refs": [
+    "dd2024_1441"
+   ]
+  },
+  {
+   "id": "gran_volumen",
+   "texto": "preferir filtración de gran volumen frente a muestra puntual; el proveedor indica que la puntual subestima 4,7× y que hacen falta ~21 muestras (vs 51 puntuales) para ±25 % al 95 %",
+   "estado": "COM",
+   "refs": [
+    "wasser30"
+   ]
+  },
+  {
+   "id": "frecuencia_legal",
+   "texto": "referencia legal: ≥2 muestras/año (≥150.000 h-e) o 1 cada 2 años (10.000–150.000 h-e); el proyecto muestrea con más frecuencia",
+   "estado": "OFI",
+   "refs": [
+    "uwwtd2024"
+   ]
+  },
+  {
+   "id": "rango_tamano",
+   "texto": "20 µm–5 mm (fibras hasta 15 mm), clases 20–50, 50–100, 100–300, 300–1.000, 1.000–5.000 µm",
+   "estado": "OFI",
+   "refs": [
+    "dd2024_1441"
+   ]
+  },
+  {
+   "id": "identificacion",
+   "texto": "µFTIR o µRaman o QCL-IR capaces de ≤20 µm, biblioteca con PE, PP, PET, PS, PVC, PA, PU, PMMA, PTFE, PC; LDIR (QCL) para recuento rápido >20 µm; µRaman para subfracción <20 µm (hasta ~1 µm)",
+   "estado": "OFI",
+   "refs": [
+    "dd2024_1441",
+    "xie2024",
+    "iso16094_2"
+   ]
+  },
+  {
+   "id": "masa",
+   "texto": "Py-GC/MS para masa por polímero (complementa recuentos; detecta fragmentación); método ISO 16094-3 aún en elaboración",
+   "estado": "RES",
+   "refs": [
+    "xie2024",
+    "iso16094_3"
+   ]
+  },
+  {
+   "id": "blancos",
+   "texto": "≥10 blancos de procedimiento por tipo de filtro (100/20 µm); LOD = media + 3σ; filtros blanco en campo",
+   "estado": "OFI",
+   "refs": [
+    "dd2024_1441"
+   ]
+  },
+  {
+   "id": "recuperacion",
+   "texto": "spike de 50–150 partículas (120–200 µm y 30–70 µm, al menos PET y PE); aceptación 100 % ±40 %",
+   "estado": "OFI",
+   "refs": [
+    "dd2024_1441"
+   ]
+  },
+  {
+   "id": "submuestreo",
+   "texto": "≥10 % del material / ≥20 % del área de filtro si no se analiza completo; líquidos filtrados ≤0,45 µm",
+   "estado": "OFI",
+   "refs": [
+    "dd2024_1441"
+   ]
+  },
+  {
+   "id": "lodos",
+   "texto": "extracción con digestión de la materia orgánica y separación por densidad con spike en cada lote; resultados en partículas/g MS y mg/kg MS",
+   "estado": "RES",
+   "refs": [
+    "prus2024"
+   ]
+  },
+  {
+   "id": "expresion",
+   "texto": "partículas/m3 por clase de tamaño y polímero; eliminación por etapa con afluente y efluente de la misma campaña",
+   "estado": "OFI",
+   "refs": [
+    "dd2024_1441",
+    "sturm2025"
+   ]
+  },
+  {
+   "id": "control_contaminacion",
+   "texto": "material no plástico, bata de algodón, campana/flujo laminar, filtros blanco abiertos durante la manipulación",
+   "estado": "EST",
+   "refs": [
+    "dd2024_1441"
+   ]
+  },
+  {
+   "id": "actualizacion",
+   "texto": "adaptar al acto de ejecución de la Directiva 2024/3019 cuando se publique (plazo 2-7-2027)",
+   "estado": "OFI",
+   "refs": [
+    "uwwtd2024"
+   ]
+  }
+ ],
+ "kpis": [
+  {
+   "id": "k1",
+   "texto": "eliminación del tren terciario para MPs ≥20 µm (por clase de tamaño)",
+   "estado": "EST",
+   "refs": [
+    "talvitie2017"
+   ],
+   "refs_obj": "≥95 % (referencia: 97 % arena)"
+  },
+  {
+   "id": "k2",
+   "texto": "recuperación de spike",
+   "estado": "OFI",
+   "refs": [
+    "dd2024_1441"
+   ],
+   "refs_obj": "60–140 % (100 ±40 %)"
+  },
+  {
+   "id": "k3",
+   "texto": "muestras por encima del LOD (μ+3σ de blancos)",
+   "estado": "OFI",
+   "refs": [
+    "dd2024_1441"
+   ],
+   "refs_obj": "100 % de resultados notificados con LOD"
+  },
+  {
+   "id": "k4",
+   "texto": "OPEX del tren seleccionado",
+   "estado": "EST",
+   "refs": [
+    "iglesias2017"
+   ],
+   "refs_obj": "≤0,12 €/m3 (referencia tren de filtración)"
+  },
+  {
+   "id": "k5",
+   "texto": "energía del tren seleccionado",
+   "estado": "EST",
+   "refs": [
+    "gcamejo2023"
+   ],
+   "refs_obj": "≤0,1 kWh/m3 (referencia filtración por gravedad)"
+  },
+  {
+   "id": "k6",
+   "texto": "reducción de MPs en lodo tras tratamiento térmico",
+   "estado": "EST",
+   "refs": [
+    "ni2020"
+   ],
+   "refs_obj": "≥99 % de partículas (referencia pirólisis 500 °C)"
+  },
+  {
+   "id": "k7",
+   "texto": "balance de masas agua + lodo",
+   "estado": "EST",
+   "refs": [],
+   "refs_obj": "cierre a acordar en f0"
+  },
+  {
+   "id": "k8",
+   "texto": "hitos h0–h4 en plazo",
+   "estado": "EST",
+   "refs": [],
+   "refs_obj": "100 %"
+  }
+ ],
+ "riesgos": [
+  {
+   "id": "r1_acceso_edar",
+   "texto": "sin EDAR socia no hay piloto",
+   "estado": "",
+   "refs": [],
+   "mitigacion": "carta de apoyo antes de solicitar financiación; EDAR alternativa"
+  },
+  {
+   "id": "r2_colmatacion_muestreo",
+   "texto": "filtros 20 µm se colmatan en agua residual",
+   "estado": "",
+   "refs": [
+    "dd2024_1441"
+   ],
+   "mitigacion": "ensayos de volumen en f0; prefiltro 100 µm; registro de volumen"
+  },
+  {
+   "id": "r3_contaminacion",
+   "texto": "falsos positivos por fibras ambientales",
+   "estado": "",
+   "refs": [
+    "dd2024_1441"
+   ],
+   "mitigacion": "blancos ≥10 por tipo, LOD μ+3σ, control de laboratorio"
+  },
+  {
+   "id": "r4_comparabilidad",
+   "texto": "resultados no comparables con literatura",
+   "estado": "",
+   "refs": [
+    "dd2024_1441",
+    "npj2025"
+   ],
+   "mitigacion": "clases de tamaño y polímeros de la DD 2024/1441; publicar método"
+  },
+  {
+   "id": "r5_capacidad_analitica",
+   "texto": "coste y tiempo de µFTIR/Raman limitan nº de muestras",
+   "estado": "",
+   "refs": [
+    "xie2024"
+   ],
+   "mitigacion": "LDIR para cribado y µFTIR/Raman en submuestra; laboratorio externo"
+  },
+  {
+   "id": "r6_fragmentacion",
+   "texto": "coagulación/EC/ozono generan fragmentos <20 µm no contados",
+   "estado": "",
+   "refs": [
+    "senathirajah2023",
+    "wieland2025"
+   ],
+   "mitigacion": "Py-GC/MS (masa) y µRaman en submuestras"
+  },
+  {
+   "id": "r7_cambio_metodo_ue",
+   "texto": "el acto de ejecución de 2027 puede cambiar el método",
+   "estado": "",
+   "refs": [
+    "uwwtd2024"
+   ],
+   "mitigacion": "conservar filtros y espectros; protocolo versionado"
+  },
+  {
+   "id": "r8_biochar",
+   "texto": "desprendimiento de finos o pérdida de eficacia del biochar",
+   "estado": "",
+   "refs": [
+    "wang2020"
+   ],
+   "mitigacion": "medir finos/turbidez en efluente B; lavado y reposición"
+  },
+  {
+   "id": "r9_financiacion",
+   "texto": "denegación o retraso de la convocatoria",
+   "estado": "",
+   "refs": [],
+   "mitigacion": "presentar a dos convocatorias compatibles (AEI y CDTI/LIFE) sin doble financiación"
+  }
+ ],
+ "presupuesto": {
+  "nota": "importes \"\" donde no hay dato con fuente; completar con ofertas reales. Referencias de escala abajo",
+  "partidas": [
+   {
+    "id": "personal",
+    "concepto": "investigador/a + técnico/a de laboratorio",
+    "importe_eur": "",
+    "base": "tablas salariales de la entidad",
+    "fuente": []
+   },
+   {
+    "id": "analitica",
+    "concepto": "análisis µFTIR/LDIR/Raman y Py-GC/MS (nº de muestras × €/muestra)",
+    "importe_eur": "",
+    "base": "ofertas de laboratorio; nº de muestras según dp5 y protocolo",
+    "fuente": []
+   },
+   {
+    "id": "piloto",
+    "concepto": "columnas de arena/arena+biochar, módulo UF, bombas, instrumentación",
+    "importe_eur": "",
+    "base": "ofertas de proveedores (CAPEX de planta real no aplica a piloto)",
+    "fuente": []
+   },
+   {
+    "id": "energia_piloto",
+    "concepto": "energía de la línea de filtración",
+    "importe_eur": "",
+    "base": "≈850 kWh/año para 1 m3/h a 0,097 kWh/m3 (EST) × precio eléctrico de la EDAR",
+    "fuente": [
+     "gcamejo2023"
+    ]
+   },
+   {
+    "id": "lodos_pirolisis",
+    "concepto": "servicio de pirólisis y caracterización de biochar",
+    "importe_eur": "",
+    "base": "oferta de socio tecnológico",
+    "fuente": []
+   },
+   {
+    "id": "consumibles",
+    "concepto": "filtros, reactivos, patrones de MPs para spike",
+    "importe_eur": "",
+    "base": "ofertas",
+    "fuente": []
+   },
+   {
+    "id": "difusion",
+    "concepto": "publicación en abierto, congresos",
+    "importe_eur": "",
+    "base": "tarifas APC de la revista elegida",
+    "fuente": []
+   }
+  ],
+  "referencias_escala": [
+   {
+    "id": "cdti_minimo",
+    "dato": "CDTI Proyectos de I+D: presupuesto mínimo 175.000 € por empresa",
+    "fuente": [
+     "cdti_pid"
+    ],
+    "estado_verificacion": "fragmento_busqueda"
+   },
+   {
+    "id": "life_cofin",
+    "dato": "LIFE SAP: cofinanciación máxima 60 %",
+    "fuente": [
+     "life2026",
+     "life_sap"
+    ],
+    "estado_verificacion": "fragmento_busqueda"
+   }
+  ]
+ },
+ "financiacion": [
+  {
+   "id": "aei_pgc_2026",
+   "programa": "AEI Proyectos de Generación de Conocimiento 2026",
+   "plazo": "solicitudes 3–24 nov 2026, 14:00 hora peninsular (Europe/Madrid)",
+   "dotacion": "724 M€ (total convocatoria)",
+   "beneficiarios": "organismos públicos de investigación, universidades y centros tecnológicos (ver requisitos en la convocatoria)",
+   "encaje": "alto si el solicitante es universidad/OPI; fases f0–f4",
+   "enlace": [
+    "aei2026",
+    "aei2026web"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "cdti_pid",
+   "programa": "CDTI Proyectos de I+D",
+   "plazo": "convocatoria abierta todo el año (verificar en CDTI)",
+   "dotacion": "",
+   "beneficiarios": "empresas",
+   "encaje": "alto si lidera una empresa (tecnología de filtración/biochar)",
+   "enlace": [
+    "cdti_pid"
+   ],
+   "estado_verificacion": "fragmento_busqueda"
+  },
+  {
+   "id": "life_sap_env",
+   "programa": "LIFE Circular Economy and Quality of Life (LIFE-2026-SAP-ENV)",
+   "plazo": "2026 cerrada (22 sep 2026); próxima convocatoria 2027, fecha \"\"",
+   "dotacion": "",
+   "beneficiarios": "entidades públicas y privadas de la UE",
+   "encaje": "alto para demostración piloto en EDAR",
+   "enlace": [
+    "life2026",
+    "life_sap"
+   ],
+   "estado_verificacion": "fragmento_busqueda"
+  },
+  {
+   "id": "horizon_cl6_zeropollution",
+   "programa": "Horizon Europe Cluster 6 – HORIZON-CL6-2026-01-ZEROPOLLUTION-01-two-stage (Decontaminate and bioremediate aquatic pollution)",
+   "plazo": "primera etapa probablemente cerrada (16-04-2026 según página no oficial); revisar temas 2027 en el programa de trabajo",
+   "dotacion": "",
+   "beneficiarios": "consorcios internacionales",
+   "encaje": "medio-alto (micro/nanoplásticos en agua residual y potable)",
+   "enlace": [
+    "cl6_2026",
+    "wp_cl6"
+   ],
+   "estado_verificacion": "fragmento_busqueda"
+  }
+ ],
+ "datos_clave": [
+  {
+   "id": "calendario_aei",
+   "dato": "AEI PGC 2026: 3–24 nov 2026",
+   "refs": [
+    "aei2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "metodo_ue",
+   "dato": "metodología de referencia: DD 2024/1441 (20 µm–5 mm, cascada 100/20 µm, blancos ≥10, spike 100±40 %)",
+   "refs": [
+    "dd2024_1441"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "plazo_metodo_aguas_residuales",
+   "dato": "actos de ejecución de la Directiva 2024/3019 con metodología a más tardar el 2-7-2027",
+   "refs": [
+    "uwwtd2024"
+   ],
+   "estado_verificacion": "texto_oficial"
+  }
+ ],
+ "tareas": [
+  {
+   "id": "t1",
+   "texto": "obtener carta de apoyo de la EDAR (dp1)",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t2",
+   "texto": "pedir ofertas de análisis y de equipos piloto para cerrar presupuesto",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t3",
+   "texto": "comprobar requisitos y plazo de la convocatoria elegida en la web oficial",
+   "estado": "pendiente",
+   "refs": [
+    "aei2026web"
+   ]
+  },
+  {
+   "id": "t4",
+   "texto": "redactar memoria técnica a partir de este plan",
+   "estado": "pendiente",
+   "refs": []
+  }
+ ],
+ "decisiones": [
+  {
+   "id": "dp1",
+   "texto": "EDAR objetivo (nombre, h-e, caudal) y si existe 4ª etapa prevista",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp2",
+   "texto": "RESUELTA: AEI Proyectos de Generación de Conocimiento 2026 solicitada por universidad u organismo público (3–24-11-2026); requiere IP doctor/a vinculado/a; ver 05_solicitud_aei",
+   "estado": "resuelta_usuario",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "dp3",
+   "texto": "líneas piloto: A arena (+coagulación), B arena+biochar, C UF referencia; ¿EC opcional?",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp4",
+   "texto": "incluir línea de lodos (pirólisis) o dejarla fuera (24 meses)",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp5",
+   "texto": "tamaño mínimo: 20 µm (método UE, µFTIR/LDIR) o bajar a 1–10 µm con µRaman (más caro y lento)",
+   "estado": "pendiente_usuario",
+   "refs": [
+    "dd2024_1441",
+    "xie2024"
+   ]
+  },
+  {
+   "id": "dp6",
+   "texto": "laboratorio analítico propio o externo y técnicas disponibles",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp7",
+   "texto": "presupuesto máximo y duración",
+   "estado": "pendiente_usuario",
+   "refs": []
+  }
+ ],
+ "proximo_paso": [
+  "conseguir IP vinculado/a antes del 30-10-2026 y completar 05_solicitud_aei para presentar entre el 3 y el 24-11-2026 (14:00 Europe/Madrid)"
+ ]
+}
