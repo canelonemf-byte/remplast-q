@@ -1,0 +1,244 @@
+{
+ "meta": {
+  "proyecto": "REMPLAST-Q",
+  "documento": "presupuesto_aei_pgc_2026",
+  "version": "v1",
+  "fecha": "2026-10-18",
+  "idioma": "es",
+  "autoria": "Lázaro López Paz, El Prat de Llobregat, Barcelona, España, con asistencia de inteligencia artificial; ORCID 0000-0001-8601-1963",
+  "duracion": "36 meses (inicio no antes del 1-9-2027)",
+  "regla": "importes \"\" hasta tener ofertas o tarifas de la entidad; solo partidas elegibles según el art. 11",
+  "leyenda_verificacion": "estado_verificacion: TC=cifra comprobada en texto completo; RES=solo resumen/abstract; SEC=fuente secundaria (reseña que cita a otro); COM=fuente comercial/proveedor; FRAG=fragmento de buscador o página no leída completa; OFI=texto oficial (EUR-Lex/BOE); EST=estimación propia justificada"
+ },
+ "objetivo": [
+  "estructurar el presupuesto elegible de la solicitud AEI de REMPLAST-Q"
+ ],
+ "datos_clave": [
+  {
+   "id": "costes_marginales",
+   "dato": "presupuesto solo en costes marginales; ayuda hasta el 100 % (art. 11.1)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "indirectos",
+   "dato": "indirectos = 25 % fijo de los directos (art. 11.4)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "umbral_ingles",
+   "dato": "si los costes directos son ≥100.000 €, la memoria se presenta en inglés y se recomienda la justificación del presupuesto en inglés (art. 18.1.m, 18.2.a)",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "escala_referencia",
+   "dato": "referencia de escala: ReUseMP3 (proyecto estatal sobre MPs en reutilización de agua), MCIU, 3 años, 210.830,40 €; no es un tope",
+   "refs": [
+    "reusemp3"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "energia_piloto",
+   "dato": "energía de la filtración piloto ≈850 kWh/año para 1 m3/h (a 0,097 kWh/m3); coste = kWh × precio de la EDAR (si la paga el proyecto)",
+   "refs": [
+    "gcamejo2023"
+   ],
+   "estado_verificacion": "estimacion"
+  }
+ ],
+ "partidas": [
+  {
+   "id": "a_personal",
+   "articulo": "11.3.a",
+   "concepto": "contrato de técnico/a de laboratorio o investigador/a posdoctoral dedicado/a al proyecto (no el IP ni el equipo de investigación)",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "tablas salariales de la entidad × meses × dedicación",
+   "notas": "no elegible el personal propio de capítulo I en entidades públicas"
+  },
+  {
+   "id": "b_movilidad",
+   "articulo": "11.3.b",
+   "concepto": "desplazamientos a la EDAR para muestreo (campañas) y congresos",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "normativa de dietas de la entidad; estancias ≤1.500 €/mes en España",
+   "notas": "campañas de muestreo pueden superar 1 mes"
+  },
+  {
+   "id": "c_equipamiento",
+   "articulo": "11.3.c",
+   "concepto": "columnas piloto (arena, arena+biochar), módulo UF de referencia, bombas, caudalímetros, turbidímetros, filtros en cascada 100/20 µm de acero inoxidable",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "ofertas (3 si supera el contrato menor)",
+   "notas": "uso para el fin durante ≥5 años"
+  },
+  {
+   "id": "d_fungible",
+   "articulo": "11.3.d",
+   "concepto": "filtros, reactivos de digestión, patrones de MPs (PE/PET, 30–70 y 120–200 µm) para recuperación, biochar comercial, consumibles de Py-GC/MS",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "ofertas",
+   "notas": "sin material de oficina"
+  },
+  {
+   "id": "e_inmateriales",
+   "articulo": "11.3.e",
+   "concepto": "software de análisis espectral / biblioteca de polímeros",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "ofertas",
+   "notas": ""
+  },
+  {
+   "id": "g_datos",
+   "articulo": "11.3.g",
+   "concepto": "repositorio de datos (espectros, recuentos) FAIR",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "tarifa del repositorio (puede ser gratuito)",
+   "notas": ""
+  },
+  {
+   "id": "i_servicios_id",
+   "articulo": "11.3.i",
+   "concepto": "servicios externos de análisis µFTIR/LDIR/µRaman o Py-GC/MS y ensayos de pirólisis, si la entidad no dispone de ellos",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "nº de muestras × €/muestra (ofertas)",
+   "notas": "confirmar con la oficina de investigación si cuentan como subcontratación (límite 25 %, art. 11.3.q)"
+  },
+  {
+   "id": "j_publicacion",
+   "articulo": "11.3.j",
+   "concepto": "publicación en acceso abierto (APC) y depósito en repositorios",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "APC de las revistas objetivo",
+   "notas": "no números especiales"
+  },
+  {
+   "id": "l_m_difusion",
+   "articulo": "11.3.l–m",
+   "concepto": "inscripción en congresos; jornada final con operadores de EDAR",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "tarifas",
+   "notas": ""
+  },
+  {
+   "id": "n_servicios_centrales",
+   "articulo": "11.3.n",
+   "concepto": "servicios científico-técnicos de la entidad (microscopía, FTIR, TGA) con tarifas públicas",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "tarifas públicas de la entidad",
+   "notas": ""
+  },
+  {
+   "id": "q_subcontratacion",
+   "articulo": "11.3.q",
+   "concepto": "subcontratación (si procede)",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "≤25 % de la ayuda",
+   "notas": "identificar al subcontratista en la solicitud"
+  },
+  {
+   "id": "costes_indirectos",
+   "articulo": "11.4",
+   "concepto": "costes indirectos",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "",
+   "base_calculo": "25 % × total de costes directos (fijo)",
+   "notas": "se calculan sobre los directos; no se justifican"
+  },
+  {
+   "id": "predoctoral_opcional",
+   "articulo": "14.3",
+   "concepto": "ayuda predoctoral asociada (opcional)",
+   "anualidad_1": "",
+   "anualidad_2": "",
+   "anualidad_3": "",
+   "total": "143.350 € (importe fijo de la convocatoria)",
+   "base_calculo": "32.500 €/año de contrato + 3.350 € de indemnización + 10.000 € para estancias y matrícula",
+   "notas": "se concede aparte si la comisión lo propone; el desglose por anualidad depende de la fecha de incorporación"
+  }
+ ],
+ "tareas": [
+  {
+   "id": "t1",
+   "texto": "pedir ofertas de análisis (µFTIR/LDIR/Raman, Py-GC/MS) y de equipos piloto",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t2",
+   "texto": "pedir a la oficina de investigación de la entidad las tablas salariales y las tarifas de servicios",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t3",
+   "texto": "decidir si los costes directos superan 100.000 € (idioma de la memoria)",
+   "estado": "pendiente",
+   "refs": []
+  }
+ ],
+ "riesgos": [
+  {
+   "id": "r1",
+   "texto": "infra o sobrepresupuestar penaliza la viabilidad (criterio 1.2)",
+   "estado": "",
+   "refs": [
+    "aei_conv2026"
+   ]
+  }
+ ],
+ "decisiones": [
+  {
+   "id": "dp7",
+   "texto": "importe total y anualidades",
+   "estado": "pendiente_usuario_e_ip",
+   "refs": []
+  }
+ ],
+ "proximo_paso": [
+  "rellenar importes con ofertas antes del 12-11-2026"
+ ]
+}

@@ -1,0 +1,471 @@
+{
+ "meta": {
+  "proyecto": "REMPLAST-Q",
+  "usuario": "Lázaro López Paz",
+  "documento": "tratamiento_lodos_biosolidos_microplasticos",
+  "version": "v1",
+  "fecha": "2026-10-18",
+  "idioma": "es",
+  "alcance": [
+   "lodo_edar",
+   "biosolidos",
+   "aplicacion_agricola",
+   "normativa_ue_es"
+  ],
+  "metodo": "artículos revisados por pares (metadatos en Crossref), informes JRC/Comisión y textos legales EUR-Lex/BOE",
+  "leyenda_verificacion": "estado_verificacion: TC=cifra comprobada en texto completo; RES=solo resumen/abstract; SEC=fuente secundaria (reseña que cita a otro); COM=fuente comercial/proveedor; FRAG=fragmento de buscador o página no leída completa; OFI=texto oficial (EUR-Lex/BOE); EST=estimación propia justificada",
+  "nota": "eliminación medida por recuento de partículas salvo indicación; recuento puede subir por fragmentación aunque baje la masa"
+ },
+ "objetivo": [
+  "evaluar qué tratamientos de lodo reducen o destruyen MPs y con qué evidencia",
+  "resumir el marco normativo UE/España para lodos y su uso agrícola",
+  "proponer la ruta de lodos para REMPLAST-Q"
+ ],
+ "datos_clave": [
+  {
+   "id": "sumidero",
+   "dato": "potencialmente >65 % de los MPs que entran en la EDAR acaban en el lodo",
+   "refs": [
+    "carnevale2024"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "concentracion_biosolidos",
+   "dato": "biosólidos de 7 EDAR de California: 3–52 partículas/g",
+   "refs": [
+    "sccwrp2024"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "aporte_suelo_europa",
+   "dato": "63.000–430.000 t/año de MPs a suelos agrícolas europeos (estimación)",
+   "refs": [
+    "nizzetto2016"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "aporte_suelo_1_5mm",
+   "dato": "31.000–42.000 t/año de MPs de 1–5 mm a suelos agrícolas europeos vía lodo (hasta 4,8 g/m2/año)",
+   "refs": [
+    "lofty2022"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "digestion_anaerobia",
+   "dato": "digestión mesofílica a escala real (790.000 h-e): ~30 % de reducción de carga (7.326→4.885 kg/año) dentro de la variabilidad del muestreo, no confirmada",
+   "refs": [
+    "chand2021"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "pirolisis",
+   "dato": "pirólisis a 500 °C: 550,8–960,9 → 1,4–2,3 partículas/g; PE/PP degradados por completo ≥450 °C",
+   "refs": [
+    "ni2020"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "htc",
+   "dato": "HTC: 54 % (220 °C, 2 h) con +56 % de partículas a 200 °C por fragmentación; 71±7,5 % (220 °C, 3 h)",
+   "refs": [
+    "prus2025",
+    "jose2025"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "incineracion_ue",
+   "dato": "opción política PO2 del JRC (incineración obligatoria + recuperación de P) elimina MPs del uso agrícola; monoincineración ~350 €/t MS (160–510)",
+   "refs": [
+    "jrc2023sludge"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "norma_ue_lodos",
+   "dato": "la Directiva 86/278/CEE solo regula metales pesados; la evaluación de la Comisión señala MPs como contaminante emergente no cubierto",
+   "refs": [
+    "swd2023"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "monitorizacion_lodos",
+   "dato": "Directiva 2024/3019 art. 21(3): monitorizar MPs en lodos cuando proceda y en particular si se reutilizan en agricultura, en aglomeraciones ≥10.000 h-e",
+   "refs": [
+    "uwwtd2024"
+   ],
+   "estado_verificacion": "texto_oficial"
+  }
+ ],
+ "tabla_tratamientos": [
+  {
+   "id": "digestion_anaerobia_mesofila",
+   "tratamiento": "Digestión anaerobia mesofílica (35–37 °C)",
+   "escala": "real y laboratorio",
+   "eliminacion_mps": "~30 % (no significativo, escala real); 62,1 % CSTR vs 88,6 % AnMBR (laboratorio)",
+   "temperatura_tiempo": "mesofílica",
+   "trl_aprox": "9 (proceso); no diseñado para MPs",
+   "coste": "",
+   "observaciones": "sugiere fragmentación más que mineralización; polímeros no degradados de forma general",
+   "fuentes": [
+    "chand2021",
+    "lera2025",
+    "lessa2024"
+   ],
+   "verificacion": [
+    {
+     "cifra": "~30 % no confirmado",
+     "ref": "chand2021",
+     "estado": "resumen"
+    },
+    {
+     "cifra": "88,6 % vs 62,1 %",
+     "ref": "lera2025",
+     "estado": "resumen"
+    },
+    {
+     "cifra": "35/55 °C sin degradación general",
+     "ref": "lessa2024",
+     "estado": "resumen"
+    }
+   ]
+  },
+  {
+   "id": "digestion_anaerobia_termofila",
+   "tratamiento": "Digestión anaerobia termofílica (55 °C)",
+   "escala": "laboratorio",
+   "eliminacion_mps": "sin degradación general de los polímeros ensayados",
+   "temperatura_tiempo": "55 °C",
+   "trl_aprox": "9 (proceso)",
+   "coste": "",
+   "observaciones": "",
+   "fuentes": [
+    "lessa2024"
+   ],
+   "verificacion": [
+    {
+     "cifra": "sin degradación general",
+     "ref": "lessa2024",
+     "estado": "resumen"
+    }
+   ]
+  },
+  {
+   "id": "compostaje_convencional_hipertermofilo",
+   "tratamiento": "Compostaje (hipertermófilo >70 °C)",
+   "escala": "real",
+   "eliminacion_mps": "43,7 % en 45 d (hipertermófilo, real); PS 7,3 % en 56 d (laboratorio)",
+   "temperatura_tiempo": ">70 °C, 45 d",
+   "trl_aprox": "7 (estimación)",
+   "coste": "30–35 €/t húmeda (compostaje, España, coste general de gestión)",
+   "observaciones": "el compost resultante sigue aportando MPs al suelo",
+   "fuentes": [
+    "chen2020comp",
+    "iglesias2017"
+   ],
+   "verificacion": [
+    {
+     "cifra": "43,7 %",
+     "ref": "chen2020comp",
+     "estado": "resumen"
+    },
+    {
+     "cifra": "30–35 €/t",
+     "ref": "iglesias2017",
+     "estado": "fuente_secundaria"
+    }
+   ]
+  },
+  {
+   "id": "pirolisis",
+   "tratamiento": "Pirólisis a biochar",
+   "escala": "laboratorio/piloto",
+   "eliminacion_mps": "~99,6–99,9 % de partículas a 500 °C (cálculo propio a partir de 550,8–960,9 → 1,4–2,3 part./g); 91–97 % a 400–700 °C (2 h)",
+   "temperatura_tiempo": "≥450–500 °C",
+   "trl_aprox": "6–7 para lodos (estimación)",
+   "coste": "análisis tecno-económico favorable (sin €/t extraído)",
+   "observaciones": "a temperaturas bajas pueden formarse nuevos polímeros; elimina también PFAS (100 % en el estudio)",
+   "fuentes": [
+    "ni2020",
+    "keller2024"
+   ],
+   "verificacion": [
+    {
+     "cifra": "550,8–960,9 → 1,4–2,3 part./g",
+     "ref": "ni2020",
+     "estado": "resumen"
+    },
+    {
+     "cifra": "91–97 %; PFAS 100 %",
+     "ref": "keller2024",
+     "estado": "resumen"
+    }
+   ]
+  },
+  {
+   "id": "carbonizacion_hidrotermal",
+   "tratamiento": "Carbonización hidrotermal (HTC)",
+   "escala": "laboratorio",
+   "eliminacion_mps": "54 % (220 °C/2 h); 71±7,5 % (220 °C/3 h); 81–90 % por recuento y 69–78 % por masa (180–200 °C, digestato)",
+   "temperatura_tiempo": "180–220 °C, 2–3 h",
+   "trl_aprox": "5–6 (estimación)",
+   "coste": "",
+   "observaciones": "a 200 °C el recuento subió 56 % (fragmentación)",
+   "fuentes": [
+    "prus2025",
+    "jose2025",
+    "htc_acs2024",
+    "xu2022"
+   ],
+   "verificacion": [
+    {
+     "cifra": "54 %; +56 % a 200 °C",
+     "ref": "prus2025",
+     "estado": "resumen"
+    },
+    {
+     "cifra": "71±7,5 %",
+     "ref": "jose2025",
+     "estado": "resumen"
+    },
+    {
+     "cifra": "81–90 % / 69–78 %",
+     "ref": "htc_acs2024",
+     "estado": "fragmento_busqueda"
+    }
+   ]
+  },
+  {
+   "id": "incineracion",
+   "tratamiento": "Monoincineración / coincineración",
+   "escala": "real",
+   "eliminacion_mps": "sin datos directos en cenizas de lodo; en incineración de residuos urbanos persisten MPs en escorias y cenizas volantes",
+   "temperatura_tiempo": "",
+   "trl_aprox": "9",
+   "coste": "monoincineración ~350 €/t MS (160–510 €/t MS)",
+   "observaciones": "permite recuperación de P de cenizas (art. 20 Directiva 2024/3019); medir MPs en escorias",
+   "fuentes": [
+    "jrc2023sludge",
+    "shen2021",
+    "uwwtd2024"
+   ],
+   "verificacion": [
+    {
+     "cifra": "350 €/t MS (160–510)",
+     "ref": "jrc2023sludge",
+     "estado": "texto_completo"
+    },
+    {
+     "cifra": "MPs en cenizas de RSU",
+     "ref": "shen2021",
+     "estado": "resumen"
+    }
+   ]
+  },
+  {
+   "id": "secado_termico",
+   "tratamiento": "Secado térmico",
+   "escala": "real",
+   "eliminacion_mps": "",
+   "temperatura_tiempo": "",
+   "trl_aprox": "9",
+   "coste": "40–60 €/t húmeda (España, coste general)",
+   "observaciones": "sin datos de MPs hallados",
+   "fuentes": [
+    "iglesias2017"
+   ],
+   "verificacion": [
+    {
+     "cifra": "40–60 €/t",
+     "ref": "iglesias2017",
+     "estado": "fuente_secundaria"
+    }
+   ]
+  },
+  {
+   "id": "aplicacion_agricola_directa",
+   "tratamiento": "Aplicación agrícola (referencia)",
+   "escala": "real",
+   "eliminacion_mps": "0 % (vía de entrada al suelo)",
+   "temperatura_tiempo": "",
+   "trl_aprox": "9",
+   "coste": "15–20 €/t húmeda (España, coste general)",
+   "observaciones": "vía de entrada principal de MPs al suelo agrícola",
+   "fuentes": [
+    "iglesias2017",
+    "nizzetto2016",
+    "lofty2022"
+   ],
+   "verificacion": [
+    {
+     "cifra": "15–20 €/t",
+     "ref": "iglesias2017",
+     "estado": "fuente_secundaria"
+    }
+   ]
+  }
+ ],
+ "normativa": [
+  {
+   "id": "ue_86_278",
+   "texto": "Directiva 86/278/CEE: uso agrícola de lodos; regula metales pesados; sin MPs",
+   "estado": "vigente",
+   "refs": [
+    "swd2023"
+   ]
+  },
+  {
+   "id": "ue_swd_2023_158",
+   "texto": "evaluación de la Comisión (2023): la directiva no cubre contaminantes emergentes como MPs; a oct-2026 no se ha localizado propuesta legislativa de revisión",
+   "estado": "sin_propuesta_localizada",
+   "refs": [
+    "swd2023"
+   ]
+  },
+  {
+   "id": "ue_jrc_estudio",
+   "texto": "estudio de viabilidad JRC: opciones desde monitorización + recuperación de P (PO1) hasta incineración obligatoria + recuperación de P (PO2)",
+   "estado": "informativo",
+   "refs": [
+    "jrc2023sludge"
+   ]
+  },
+  {
+   "id": "ue_2024_3019_art21",
+   "texto": "monitorización de MPs en entrada/salida de EDAR ≥10.000 h-e y en lodos cuando proceda; frecuencia: ≥2 muestras/año (≥150.000 h-e) y 1 cada 2 años (10.000–150.000 h-e); metodología a más tardar el 2-7-2027",
+   "estado": "vigente",
+   "refs": [
+    "uwwtd2024"
+   ],
+   "nota": "Sturm 2025 indica umbral >150.000 h-e para lodos; prevalece el texto oficial"
+  },
+  {
+   "id": "ue_2024_3019_art20",
+   "texto": "jerarquía de residuos para lodos y recuperación de recursos (P)",
+   "estado": "vigente",
+   "refs": [
+    "uwwtd2024"
+   ]
+  },
+  {
+   "id": "es_rd_1310_1990",
+   "texto": "RD 1310/1990 de uso de lodos en el sector agrario, en vigor",
+   "estado": "vigente",
+   "refs": [
+    "rd1310"
+   ]
+  },
+  {
+   "id": "es_modificacion",
+   "texto": "consulta pública previa de MITECO para modificar el RD 1310/1990 (cerró 21-11-2025); texto del proyecto no publicado a la fecha de esta revisión",
+   "estado": "en_tramitacion",
+   "refs": [
+    "miteco2025"
+   ]
+  }
+ ],
+ "recomendacion": [
+  "evitar contar con DA o compostaje como barrera de MPs: evidencia de reducción parcial o no significativa [chand2021][lessa2024][chen2020comp]",
+  "ruta preferente por evidencia: pirólisis ≥450–500 °C o monoincineración con recuperación de P, frente a aplicación agrícola directa [ni2020][keller2024][jrc2023sludge]",
+  "medir tanto recuento como masa en cada etapa del lodo para detectar fragmentación [prus2025]"
+ ],
+ "tareas": [
+  {
+   "id": "t1",
+   "texto": "medir MPs en lodo primario, secundario, digerido y deshidratado de la EDAR piloto (balance de masas)",
+   "estado": "pendiente",
+   "refs": [
+    "dd2024_1441"
+   ]
+  },
+  {
+   "id": "t2",
+   "texto": "ensayo de pirólisis a 450/500/600 °C con socio externo y caracterización del biochar (MPs, PFAS, metales)",
+   "estado": "pendiente",
+   "refs": [
+    "ni2020",
+    "keller2024"
+   ]
+  },
+  {
+   "id": "t3",
+   "texto": "contactar al gestor de lodos de la EDAR para costes reales €/t y destino actual",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t4",
+   "texto": "seguir la tramitación del nuevo RD de lodos (MITECO) y los actos de ejecución de la Directiva 2024/3019",
+   "estado": "pendiente",
+   "refs": [
+    "miteco2025",
+    "uwwtd2024"
+   ]
+  }
+ ],
+ "riesgos": [
+  {
+   "id": "r1_fragmentacion",
+   "texto": "DA, HTC y compostaje pueden aumentar el recuento por fragmentación mientras baja la masa: medir partículas y masa (Py-GC/MS)",
+   "estado": "",
+   "refs": [
+    "prus2025",
+    "lera2025"
+   ]
+  },
+  {
+   "id": "r2_metodo_lodo",
+   "texto": "extracción de MPs en matriz orgánica (digestión H2O2/enzimática) con recuperaciones variables; spike obligatorio",
+   "estado": "",
+   "refs": [
+    "prus2024",
+    "dd2024_1441"
+   ]
+  },
+  {
+   "id": "r3_regulatorio",
+   "texto": "el nuevo RD español o una revisión de la Directiva de lodos pueden cambiar el destino permitido",
+   "estado": "",
+   "refs": [
+    "miteco2025",
+    "swd2023"
+   ]
+  },
+  {
+   "id": "r4_formacion_polimeros",
+   "texto": "pirólisis a baja temperatura puede formar nuevos polímeros",
+   "estado": "",
+   "refs": [
+    "ni2020"
+   ]
+  }
+ ],
+ "decisiones": [
+  {
+   "id": "d1",
+   "texto": "¿incluir la línea de lodos en el alcance del proyecto o solo la línea de agua?",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "d2",
+   "texto": "tratamiento térmico a ensayar: pirólisis (recomendado por evidencia) o HTC",
+   "estado": "pendiente_usuario",
+   "refs": [
+    "ni2020",
+    "keller2024",
+    "prus2025"
+   ]
+  }
+ ],
+ "proximo_paso": [
+  "confirmar d1 y, si se incluye, pedir a la EDAR datos del destino actual del lodo y su coste"
+ ]
+}

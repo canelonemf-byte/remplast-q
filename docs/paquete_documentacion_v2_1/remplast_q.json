@@ -1,0 +1,342 @@
+{
+ "meta": {
+  "proyecto": "REMPLAST-Q",
+  "usuario": "Lázaro López Paz",
+  "documento": "remplast_q_maestro",
+  "version": "v1",
+  "fecha": "2026-10-18",
+  "idioma": "es",
+  "archivos": [
+   "00_README.md",
+   "remplast_q.json",
+   "referencias.md",
+   "referencias.json",
+   "01_revision_tratamiento/revision_tratamiento_microplasticos.md",
+   "01_revision_tratamiento/revision_tratamiento_microplasticos.json",
+   "01_revision_tratamiento/verificacion_crossref.json",
+   "02_lodos/tratamiento_lodos_microplasticos.md",
+   "02_lodos/tratamiento_lodos_microplasticos.json",
+   "03_costes/comparativa_costes.md",
+   "03_costes/comparativa_costes.json",
+   "04_plan_proyecto/plan_proyecto_remplast_q.md",
+   "04_plan_proyecto/plan_proyecto_remplast_q.json",
+   "05_solicitud_aei/requisitos_aei.md",
+   "05_solicitud_aei/requisitos_aei.json",
+   "05_solicitud_aei/memoria_cientifico_tecnica.md",
+   "05_solicitud_aei/presupuesto_aei.md",
+   "05_solicitud_aei/presupuesto_aei.json",
+   "05_solicitud_aei/checklist_solicitud.md",
+   "05_solicitud_aei/correo_plantilla_grupo.md",
+   "LICENSE.md"
+  ],
+  "version_paquete": "v2.1-publico CC BY 4.0 (2026-10-20)",
+  "referencias_total": 90,
+  "referencias_doi_verificadas_crossref": 55,
+  "leyenda_verificacion": "estado_verificacion: TC=cifra comprobada en texto completo; RES=solo resumen/abstract; SEC=fuente secundaria (reseña que cita a otro); COM=fuente comercial/proveedor; FRAG=fragmento de buscador o página no leída completa; OFI=texto oficial (EUR-Lex/BOE); EST=estimación propia justificada",
+  "autoria": "Lázaro López Paz, El Prat de Llobregat, Barcelona, España · ORCID 0000-0001-8601-1963 (https://orcid.org/0000-0001-8601-1963); elaborado con asistencia de inteligencia artificial",
+  "licencia": "Creative Commons Atribución 4.0 Internacional (CC BY 4.0) – https://creativecommons.org/licenses/by/4.0/deed.es",
+  "autorizacion_ejecucion": "El autor autoriza expresamente a cualquier grupo, entidad o persona a ejecutar el proyecto REMPLAST-Q, total o parcialmente, sin necesidad de su participación.",
+  "peticion_autor": "Única petición (no es condición de la licencia): si se realiza el proyecto, comunicar los resultados obtenidos al autor."
+ },
+ "objetivo": [
+  "reducir MPs en el efluente de EDAR con un tren terciario realizable y medible según el método UE",
+  "evitar la transferencia de MPs al suelo agrícola mediante una ruta térmica de lodos",
+  "obtener coste €/m3 real para decidir el escalado"
+ ],
+ "datos_clave": [
+  {
+   "id": "edar_existente",
+   "dato": "primario + secundario ya retienen 95–99 % acumulado (>125 µm)",
+   "refs": [
+    "sccwrp2024"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "terciario_arena",
+   "dato": "filtración rápida en arena 97 %; DAF 95 %; MBR 99,9 % en campaña corta",
+   "refs": [
+    "talvitie2017"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "contraevidencia",
+   "dato": "efluentes de MBR y 4ª etapa con CAP sin diferencia significativa frente a planta convencional a largo plazo",
+   "refs": [
+    "sturm2025"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "biochar",
+   "dato": ">95 % vs 60–80 % arena en laboratorio; sin coste ni datos de campo",
+   "refs": [
+    "wang2020"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "coste_filtracion",
+   "dato": "tren de filtración CAPEX ~100–115 €/(m3·d), OPEX 0,08–0,12 €/m3; MBR OPEX 0,2–0,45 €/m3 (España, € 2011)",
+   "refs": [
+    "iglesias2017"
+   ],
+   "estado_verificacion": "fuente_secundaria"
+  },
+  {
+   "id": "coste_4a_etapa",
+   "dato": "4ª etapa Suiza: explotación 0,02–0,09 CHF/m3; anual con capital 0,07–0,27 CHF/m3",
+   "refs": [
+    "vsa2024"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "lodos_da_compost",
+   "dato": "digestión anaerobia ~30 % no significativo; compostaje hipertermófilo 43,7 %",
+   "refs": [
+    "chand2021",
+    "chen2020comp"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "lodos_pirolisis",
+   "dato": "pirólisis 500 °C: 550,8–960,9 → 1,4–2,3 partículas/g",
+   "refs": [
+    "ni2020"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "lodos_incineracion",
+   "dato": "monoincineración ~350 €/t MS (160–510)",
+   "refs": [
+    "jrc2023sludge"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "norma",
+   "dato": "Directiva 2024/3019 art. 21: monitorización de MPs en EDAR ≥10.000 h-e y en lodos; metodología a más tardar 2-7-2027",
+   "refs": [
+    "uwwtd2024"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "metodo",
+   "dato": "DD 2024/1441: 20 µm–5 mm, cascada 100/20 µm, ≥10 blancos, spike 100±40 %",
+   "refs": [
+    "dd2024_1441"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "financiacion",
+   "dato": "AEI Proyectos de Generación de Conocimiento 2026: solicitudes 3–24-11-2026 a las 14:00; 724 M€; 3 o 4 años; inicio no antes del 1-9-2027; indirectos 25 %",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "bloqueante_afiliacion",
+   "dato": "el IP debe ser doctor/a (antes del 1-1-2025) y estar vinculado/a a una entidad elegible; sin afiliación, Lázaro López Paz solo puede estar en el equipo de trabajo",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "memoria_aei",
+   "dato": "memoria de 20 páginas como máximo (individual), anexo VII; en inglés si los costes directos son ≥100.000 €; CVA de 4 páginas como máximo",
+   "refs": [
+    "aei_conv2026"
+   ],
+   "estado_verificacion": "texto_oficial"
+  }
+ ],
+ "tren_recomendado": [
+  "primario + secundario existentes",
+  "coagulación ligera + filtración rápida en arena (A) vs arena+biochar (B); UF como referencia (C)",
+  "ozono solo si hace falta 4ª etapa, situado antes de la filtración",
+  "lodo: pirólisis ≥450–500 °C o monoincineración con recuperación de P"
+ ],
+ "calendario_proyecto": "1-9-2027 a 31-8-2030 (36 meses)",
+ "fases": [
+  {
+   "id": "f0",
+   "meses": "M1–M3",
+   "nombre": "preparación y QA/QC"
+  },
+  {
+   "id": "f1",
+   "meses": "M3–M9",
+   "nombre": "línea base"
+  },
+  {
+   "id": "f2",
+   "meses": "M6–M15",
+   "nombre": "ensayos en banco"
+  },
+  {
+   "id": "f3",
+   "meses": "M12–M30",
+   "nombre": "piloto in situ + lodos"
+  },
+  {
+   "id": "f4",
+   "meses": "M27–M36",
+   "nombre": "evaluación, TEA/ACV, escalado"
+  }
+ ],
+ "tareas": [
+  {
+   "id": "t0",
+   "texto": "conseguir IP doctor/a vinculado/a a una entidad elegible",
+   "estado": "pendiente_usuario",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "t1",
+   "texto": "decisiones pendientes dp1 y dp3–dp7",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "t2",
+   "texto": "carta de apoyo de EDAR y laboratorio",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t3",
+   "texto": "ofertas para cerrar presupuesto",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t4",
+   "texto": "texto completo de fuentes RES/FRAG prioritarias",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t5",
+   "texto": "memoria técnica para la convocatoria elegida",
+   "estado": "pendiente",
+   "refs": []
+  }
+ ],
+ "riesgos": [
+  {
+   "id": "r1",
+   "texto": "comparabilidad entre estudios y métodos",
+   "estado": "",
+   "refs": [
+    "npj2025"
+   ]
+  },
+  {
+   "id": "r2",
+   "texto": "transferencia de MPs al lodo/suelo",
+   "estado": "",
+   "refs": [
+    "carnevale2024"
+   ]
+  },
+  {
+   "id": "r3",
+   "texto": "fragmentación a nanoplásticos (EC, ozono, HTC)",
+   "estado": "",
+   "refs": [
+    "senathirajah2023",
+    "wieland2025",
+    "prus2025"
+   ]
+  },
+  {
+   "id": "r4",
+   "texto": "cambio de método UE en 2027",
+   "estado": "",
+   "refs": [
+    "uwwtd2024"
+   ]
+  },
+  {
+   "id": "r5",
+   "texto": "costes no específicos de MPs y antiguos",
+   "estado": "",
+   "refs": [
+    "iglesias2017"
+   ]
+  },
+  {
+   "id": "r6",
+   "texto": "sin EDAR socia no hay piloto",
+   "estado": "",
+   "refs": []
+  },
+  {
+   "id": "r7",
+   "texto": "sin IP vinculado/a no hay solicitud AEI (bloqueante)",
+   "estado": "",
+   "refs": [
+    "aei_conv2026"
+   ]
+  }
+ ],
+ "decisiones": [
+  {
+   "id": "dp1",
+   "texto": "EDAR objetivo y caudal",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp2",
+   "texto": "RESUELTA: AEI PGC 2026 solicitada por universidad u organismo público",
+   "estado": "resuelta_usuario",
+   "refs": [
+    "aei_conv2026"
+   ]
+  },
+  {
+   "id": "dp3",
+   "texto": "líneas piloto A/B/C y EC opcional",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp4",
+   "texto": "incluir línea de lodos",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp5",
+   "texto": "tamaño mínimo 20 µm o 1–10 µm",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp6",
+   "texto": "laboratorio analítico",
+   "estado": "pendiente_usuario",
+   "refs": []
+  },
+  {
+   "id": "dp7",
+   "texto": "presupuesto y duración",
+   "estado": "pendiente_usuario",
+   "refs": []
+  }
+ ],
+ "proximo_paso": [
+  "cualquier grupo interesado puede asumir el proyecto: identificar IP doctor/a vinculado/a a una entidad elegible y seguir checklist_solicitud.md hasta el cierre AEI del 24-11-2026 a las 14:00 (Europe/Madrid)"
+ ]
+}

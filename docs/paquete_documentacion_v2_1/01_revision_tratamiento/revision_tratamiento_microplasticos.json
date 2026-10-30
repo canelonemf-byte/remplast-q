@@ -1,0 +1,1369 @@
+{
+ "meta": {
+  "proyecto": "REMPLAST-Q",
+  "usuario": "Lázaro López Paz",
+  "documento": "revision_tratamiento_microplasticos",
+  "version": "v2",
+  "fecha": "2026-10-18",
+  "idioma": "es",
+  "alcance": [
+   "agua_residual_edar",
+   "agua_potable_etap",
+   "aguas_naturales",
+   "lodos_suelos"
+  ],
+  "metodo": "búsqueda web de reseñas 2022-2026, artículos revisados por pares e informes oficiales; metadatos de todas las referencias con DOI comprobados en Crossref (18-10-2026); texto completo leído cuando hubo acceso abierto (Europe PMC, repositorios institucionales, MDPI/Springer vía web)",
+  "nota_trl": "TRL marcados '(estimación)' son valoración propia a partir de la escala de demostración descrita en la fuente",
+  "nota_eficiencia": "% no comparables entre estudios: tamaño mínimo detectado, método analítico, base partículas/masa y etapa de referencia",
+  "leyenda_verificacion": "estado_verificacion: TC=cifra comprobada en texto completo; RES=solo resumen/abstract; SEC=fuente secundaria (reseña que cita a otro); COM=fuente comercial/proveedor; FRAG=fragmento de buscador o página no leída completa; OFI=texto oficial (EUR-Lex/BOE); EST=estimación propia justificada"
+ },
+ "objetivo": [
+  "mapear tecnologías de separación, coagulación, adsorción, degradación y biodegradación de MPs",
+  "por tecnología: mecanismo, rango_tamano, eficiencia, trl_aprox, coste_escalabilidad, ventajas, limitaciones, riesgos y estado de verificación de cada cifra",
+  "identificar opciones maduras, prometedoras y huecos de evidencia para REMPLAST-Q"
+ ],
+ "datos_clave": [
+  {
+   "id": "edar_california",
+   "dato": "eliminación acumulada 95,3±6,7 % tras primario, 99,1±0,7 % tras secundario, 99,9 % tras terciario; el terciario retira 85,0±7,1 % de lo que queda (>125 µm, 7 EDAR, 2022-2023)",
+   "refs": [
+    "sccwrp2024"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "edar_por_etapa",
+   "dato": "primer escalón 16,5–98,4 %; biológico 78,1–99,9 % acumulado (valor alto con MBR)",
+   "refs": [
+    "bodzek2024"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "sumidero_lodo",
+   "dato": "potencialmente >65 % de los MPs entrantes en la EDAR acaban en el lodo",
+   "refs": [
+    "carnevale2024"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "terciarios_finlandia",
+   "dato": "MBR 99,9 % (6,9→0,005 MP/L), filtro rápido de arena 97 %, DAF 95 %, filtro de discos 40–98,5 %",
+   "refs": [
+    "talvitie2017"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "contraevidencia_mbr",
+   "dato": "seguimiento a largo plazo (Alemania, filtración de gran volumen ≥10 µm): efluente MBR 15,1 MP/L y 4ª etapa con CAP 15,1 MP/L frente a 21,8 MP/L en planta convencional, sin diferencia significativa; el afluente del MBR no se midió, por lo que no da % de eliminación; autores vinculados a Wasser 3.0",
+   "refs": [
+    "sturm2025"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "etap_10_plantas",
+   "dato": "ETAP convencionales 98,7–99,4 %; MF 97,5 %; UF 99,3–100 % (≥2 µm, Raman); la coagulación-floculación-sedimentación no fue barrera consistente",
+   "refs": [
+    "npj2025"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "etap_tamano_critico",
+   "dato": "filtración granular 86,9 % para 10–20 µm frente a 99,9 % >100 µm; coagulación-sedimentación sola <2 %",
+   "refs": [
+    "zhang2020"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "coagulacion_rangos",
+   "dato": "coagulación convencional 8,28–98,2 %; electrocoagulación 8,24–99,4 % (rangos de reseña)",
+   "refs": [
+    "pu2023"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "biochar",
+   "dato": "filtros de biochar >95 % frente a 60–80 % de la arena (esferas 10 µm, laboratorio)",
+   "refs": [
+    "wang2020"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "ozono",
+   "dato": "83 % de eliminación en efluente secundario (laboratorio, MPs 200–5000 µm) con coste energético calculado de 0,094 €/m3; PTFE y PVC resisten la ozonización",
+   "refs": [
+    "topkaya2025",
+    "wieland2025"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "enzimas",
+   "dato": "LCC mejorada: ≥90 % de despolimerización de PET pretratado en <10 h (productividad 16,7 g TA/L/h)",
+   "refs": [
+    "tournier2020"
+   ],
+   "estado_verificacion": "texto_completo"
+  },
+  {
+   "id": "degradacion_general",
+   "dato": "pérdida de masa ≠ mineralización; la mayoría de POA/fotocatálisis/plasma no cuantifican CO2",
+   "refs": [
+    "iervolino2026",
+    "he2023"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "regulacion_ue",
+   "dato": "Directiva (UE) 2024/3019 art. 21: monitorizar MPs en entrada y salida de EDAR ≥10.000 h-e y en lodos cuando proceda (en particular si se reutilizan en agricultura); sin valor límite; actos de ejecución con metodología a más tardar el 2-7-2027",
+   "refs": [
+    "uwwtd2024"
+   ],
+   "estado_verificacion": "texto_oficial"
+  },
+  {
+   "id": "coste_resumen",
+   "dato": "no existen costes €/m3 específicos de MPs a escala real; se usan costes generales de tecnología (ver 03_costes)",
+   "refs": [
+    "iglesias2017",
+    "vsa2024",
+    "vuori2022"
+   ],
+   "estado_verificacion": "texto_completo"
+  }
+ ],
+ "sintesis_por_familia": {
+  "separacion_fisica": [
+   "primario/secundario: barrera principal por volumen, pero transfiere MPs al lodo [bodzek2024][sccwrp2024][carnevale2024]",
+   "filtros_arena: robustos y baratos; tamizado >20 µm y adhesión <20 µm; punto débil 10–20 µm [zhang2020][na2021]",
+   "mbr_membranas: mayor eficiencia documentada en campañas cortas, pero contraevidencia a largo plazo; fibras y defectos limitan; las membranas poliméricas pueden liberar MPs [talvitie2017][sturm2025][bodzek2025][maliwan2025]",
+   "daf: 95 % en un único estudio a escala real [talvitie2017]"
+  ],
+  "coagulacion": [
+   "convencional: muy dependiente de polímero, pH y MON; débil <20 µm [zhang2020][pu2023]",
+   "electrocoagulación: 92 % fibras / 88 % fragmentos; altera superficie, riesgo de nanoplásticos [senathirajah2023]",
+   "organosilanos (Wasser 3.0): 86±8 % en piloto EDAR; dato del propio desarrollador [wasser30]"
+  ],
+  "adsorcion": [
+   "biochar >95 % vs 60–80 % arena [wang2020]; columnas 86,6–92,6 % [olubusoye2024]",
+   "MOFs hasta 95,5 % [chen2020mof]; magnéticos 78–93 % [grbic2019]; esponjas 89,8 % [sun2020]"
+  ],
+  "degradacion": [
+   "ozonización 83 % [topkaya2025]; catalítica 70 % mineralización NPs PS [nieto2024]; PVC/PTFE resistentes [wieland2025]",
+   "Fenton/persulfato: 56–98 % de pérdida de masa en condiciones severas [singh2024][lin2024][miao2020]",
+   "fotocatálisis y plasma: escala de gramos/horas, mineralización rara vez demostrada [he2023][velasquez2024][iervolino2026]"
+  ],
+  "biodegradacion": [
+   "enzimas solo PET [tournier2020][lu2022]; planta Carbios en pausa [carbios2026]",
+   "bacterias/hongos 6–43 % en 14–90 d [sust2023]; microalgas 84–98 % por agregación [gao2023][esmaeili2023]"
+  ],
+  "lodos_suelos": [
+   "compostaje hipertermófilo 43,7 % en 45 d; detalle completo en 02_lodos [chen2020comp]"
+  ],
+  "emergente": [
+   "microrobots magnéticos vivos 60–96 % en 1 h, laboratorio [song2025]"
+  ]
+ },
+ "tabla_comparativa": [
+  {
+   "id": "tamizado_desbaste_primario",
+   "familia": "separacion_fisica",
+   "tecnologia": "Pretratamiento + decantación primaria (EDAR)",
+   "mecanismo": "Cribado, desarenado/desengrasado y sedimentación/flotación por densidad",
+   "rango_tamano": "mayoritariamente >100 µm; poco eficaz para MPs pequeños y de baja densidad",
+   "eficiencia": "16,5–98,4 % (primer escalón EDAR); 95,3±6,7 % acumulado tras primario (7 EDAR California, >125 µm)",
+   "fuentes": [
+    "bodzek2024",
+    "sccwrp2024"
+   ],
+   "trl_aprox": "9",
+   "coste_escalabilidad": "infraestructura existente; sin coste incremental específico",
+   "ventajas": [
+    "ya instalado",
+    "retiene la mayor parte de la masa de MPs"
+   ],
+   "limitaciones": [
+    "transfiere MPs a lodo",
+    "variabilidad alta entre plantas"
+   ],
+   "riesgos": [
+    "acumulación en lodos (potencialmente >65 % de los MPs entrantes)"
+   ],
+   "fuentes_riesgo": [
+    "carnevale2024"
+   ],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "16,5–98,4 % primer escalón",
+     "ref": "bodzek2024",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "95,3±6,7 % acumulado tras primario",
+     "ref": "sccwrp2024",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": ">65 % de MPs entrantes al lodo",
+     "ref": "carnevale2024",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "biologico_fangos_activos",
+   "familia": "separacion_fisica",
+   "tecnologia": "Tratamiento secundario (fangos activos + decantador)",
+   "mecanismo": "Incorporación a flóculos/EPS y sedimentación",
+   "rango_tamano": "micras a mm; peor para fibras y <20 µm",
+   "eficiencia": "78,1–99,9 % acumulado tras biológico; 99,1±0,7 % acumulado tras secundario (California)",
+   "fuentes": [
+    "bodzek2024",
+    "sccwrp2024"
+   ],
+   "trl_aprox": "9",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "existente",
+    "alto % acumulado"
+   ],
+   "limitaciones": [
+    "efluente sigue aportando millones de partículas/día por gran volumen"
+   ],
+   "riesgos": [
+    "MPs alteran EPS y sedimentabilidad del fango"
+   ],
+   "fuentes_riesgo": [
+    "hybrid_acs"
+   ],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "78,1–99,9 % acumulado tras biológico",
+     "ref": "bodzek2024",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "99,1±0,7 % acumulado tras secundario",
+     "ref": "sccwrp2024",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "filtro_arena_rapido",
+   "familia": "separacion_fisica",
+   "tecnologia": "Filtración rápida en arena / medios granulares (terciario y ETAP)",
+   "mecanismo": "Tamizado mecánico (>20 µm) y adhesión a la superficie del grano (<20 µm)",
+   "rango_tamano": "casi total >100 µm; mínimo de eficacia en 10–20 µm",
+   "eficiencia": "97 % EDAR terciario (0,7→0,02 MP/L); ETAP laboratorio 86,9 % (10–20 µm) a 99,9 % (>100 µm); ~16 % de MPs de 10 µm atraviesan la arena",
+   "fuentes": [
+    "talvitie2017",
+    "zhang2020",
+    "na2021"
+   ],
+   "trl_aprox": "9",
+   "coste_escalabilidad": "filtración rápida por gravedad 0,097 kWh/m3 vs UF 0,156 kWh/m3 (aguas urbanas); CAPEX ~100–115 €/(m3·d) y OPEX 0,08–0,12 €/m3 para tren coagulación+lamelas+filtración+desinfección (España, € 2011, no específico de MPs)",
+   "fuentes_coste": [
+    "gcamejo2023",
+    "iglesias2017"
+   ],
+   "ventajas": [
+    "bajo coste operativo",
+    "robusto y escalable"
+   ],
+   "limitaciones": [
+    "paso de 10–20 µm y fibras",
+    "lavados devuelven MPs a cabecera"
+   ],
+   "riesgos": [
+    "concentrado de lavado"
+   ],
+   "fuentes_riesgo": [],
+   "verificacion": [
+    {
+     "cifra": "97 % (0,7→0,02 MP/L)",
+     "ref": "talvitie2017",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "86,9 % (10–20 µm) a 99,9 % (>100 µm)",
+     "ref": "zhang2020",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "~16 % de MPs de 10 µm atraviesan la arena",
+     "ref": "na2021",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "0,097 kWh/m3 vs UF 0,156 kWh/m3",
+     "ref": "gcamejo2023",
+     "estado": "fragmento_busqueda",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "filtro_discos_tela",
+   "familia": "separacion_fisica",
+   "tecnologia": "Filtro de discos (terciario)",
+   "mecanismo": "Filtración superficial por malla/tela (≈10–20 µm)",
+   "rango_tamano": "",
+   "eficiencia": "40–98,5 % (0,5–2,0 → 0,03–0,3 MP/L)",
+   "fuentes": [
+    "talvitie2017"
+   ],
+   "trl_aprox": "9",
+   "coste_escalabilidad": "OPEX 0,010–0,045 €/m3 (fuente comercial, no revisada por pares)",
+   "ventajas": [
+    "compacto"
+   ],
+   "limitaciones": [
+    "rendimiento muy variable"
+   ],
+   "riesgos": [],
+   "fuentes_riesgo": [],
+   "fuentes_coste": [
+    "cloth_vendor"
+   ],
+   "verificacion": [
+    {
+     "cifra": "40–98,5 %",
+     "ref": "talvitie2017",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "daf",
+   "familia": "separacion_fisica",
+   "tecnologia": "Flotación por aire disuelto (DAF)",
+   "mecanismo": "Microburbujas + coagulante que arrastran partículas de baja densidad a superficie",
+   "rango_tamano": "",
+   "eficiencia": "95 % (2,0→0,1 MP/L, efluente secundario)",
+   "fuentes": [
+    "talvitie2017"
+   ],
+   "trl_aprox": "9",
+   "coste_escalabilidad": "1,5–2 kWh/m3 (fuente comercial, no revisada por pares)",
+   "ventajas": [
+    "eficaz para polímeros flotantes (PE, PP)"
+   ],
+   "limitaciones": [
+    "evidencia a escala real limitada (pocas plantas)"
+   ],
+   "riesgos": [
+    "consumo de reactivos"
+   ],
+   "fuentes_riesgo": [],
+   "fuentes_coste": [
+    "daf_vendor"
+   ],
+   "verificacion": [
+    {
+     "cifra": "95 % (2,0→0,1 MP/L)",
+     "ref": "talvitie2017",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "mbr",
+   "familia": "separacion_fisica",
+   "tecnologia": "Biorreactor de membrana (MBR, MF/UF sumergida)",
+   "mecanismo": "Exclusión por tamaño en membrana + retención en fango de alta edad",
+   "rango_tamano": "retiene >0,1 µm (MF) / >0,02 µm (UF) en teoría; datos medidos sobre >20 µm",
+   "eficiencia": "99,9 % (6,9→0,005 MP/L, >20 µm); 99,69 % piloto escala real (507→1,58 MP/L); rango revisado 64,4–99,9 %; seguimiento alemán a largo plazo: efluente MBR 15,1 MP/L vs convencional 21,8 MP/L, sin diferencia significativa (no se midió el afluente del MBR, por lo que no hay % de eliminación)",
+   "fuentes": [
+    "talvitie2017",
+    "egea2023",
+    "bodzek2025",
+    "sturm2025"
+   ],
+   "trl_aprox": "9 (MBR); 7–9 como barrera específica de MPs",
+   "coste_escalabilidad": "CAPEX 700–960 €/(m3·d) y OPEX 0,2–0,45 €/m3 (MBR general, España, € 2011; no específico de MPs, ver 03_costes); MBR + incineración de fango = opción más coste-efectiva en análisis finlandés",
+   "fuentes_coste": [
+    "vuori2022",
+    "hybrid_acs",
+    "iglesias2017"
+   ],
+   "ventajas": [
+    "mayor eficiencia documentada en EDAR",
+    "efluente apto reutilización"
+   ],
+   "limitaciones": [
+    "fibras pueden pasar (≈57 % de eliminación de fibras en MBR-MF)",
+    "ensuciamiento"
+   ],
+   "riesgos": [
+    "MPs se concentran en fango",
+    "membranas poliméricas pueden liberar MPs"
+   ],
+   "fuentes_riesgo": [
+    "hybrid_acs",
+    "maliwan2025"
+   ],
+   "verificacion": [
+    {
+     "cifra": "99,9 % (6,9→0,005 MP/L)",
+     "ref": "talvitie2017",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "99,69 % (507→1,58 MP/L)",
+     "ref": "egea2023",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "64,4–99,9 % rango revisado",
+     "ref": "bodzek2025",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "15,1 vs 21,8 MP/L sin diferencia significativa; afluente del MBR no medido",
+     "ref": "sturm2025",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "MBR + incineración de fango más coste-efectivo",
+     "ref": "vuori2022",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "≈57 % de eliminación de fibras",
+     "ref": "hybrid_acs",
+     "estado": "fragmento_busqueda",
+     "nota": ""
+    },
+    {
+     "cifra": "liberación de MPs desde membranas UF",
+     "ref": "maliwan2025",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "membranas_mf_uf_nf_oi",
+   "familia": "separacion_fisica",
+   "tecnologia": "Membranas a presión MF/UF/NF/OI (ETAP, terciario, lixiviados)",
+   "mecanismo": "Exclusión por tamaño (UF ~0,02 µm; NF 1–10 nm; OI densa <1 nm)",
+   "rango_tamano": "UF: rechazo completo >1 µm en banco; NF/OI teóricamente MPs y NPs",
+   "eficiencia": "ETAP con UF 99,3–100 %, con MF 97,5 % (≥2 µm, 10 plantas EE. UU.); NF/OI/UF/MBR en lixiviados 75–99 %; NF 96–99 % en lixiviado; OI >90 % habitualmente",
+   "fuentes": [
+    "npj2025",
+    "leachate2024",
+    "acarer2023"
+   ],
+   "trl_aprox": "9 (proceso); 7–9 para MPs/NPs",
+   "coste_escalabilidad": "UF 0,156 kWh/m3 (aguas urbanas); NF/OI mayor consumo (dato no hallado)",
+   "fuentes_coste": [
+    "gcamejo2023"
+   ],
+   "ventajas": [
+    "barrera más fiable incl. nanoplásticos (NF/OI)"
+   ],
+   "limitaciones": [
+    "fibras por defectos/juntas en OI",
+    "coste energético",
+    "ensuciamiento"
+   ],
+   "riesgos": [
+    "concentrado/salmuera con MPs",
+    "liberación de MPs desde membranas poliméricas por abrasión/limpieza"
+   ],
+   "fuentes_riesgo": [
+    "acarer2023",
+    "maliwan2025"
+   ],
+   "verificacion": [
+    {
+     "cifra": "UF 99,3–100 %, MF 97,5 %",
+     "ref": "npj2025",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "75–99 % en lixiviados; NF 96–99 %",
+     "ref": "leachate2024",
+     "estado": "fragmento_busqueda",
+     "nota": ""
+    },
+    {
+     "cifra": "OI >90 %",
+     "ref": "acarer2023",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "coagulacion_floculacion",
+   "familia": "coagulacion",
+   "tecnologia": "Coagulación-floculación-sedimentación (sales Al/Fe, polímeros)",
+   "mecanismo": "Neutralización de carga, barrido e inclusión en flóculos",
+   "rango_tamano": "mejor ≥20 µm; débil <20 µm",
+   "eficiencia": "8,28–98,2 % (rango revisado); ETAP banco <2 % sedimentación con Al2(SO4)3, máx. 13,6 % con PolyDADMAC; coagulación + arena 91 %",
+   "fuentes": [
+    "pu2023",
+    "zhang2020",
+    "zhao2024"
+   ],
+   "trl_aprox": "9 (proceso); 6–8 optimizado para MPs",
+   "coste_escalabilidad": "coagulante ≈0,0594 ¥/t de agua con 91 % de eliminación (coagulación + arena, laboratorio/piloto)",
+   "fuentes_coste": [
+    "zhao2024"
+   ],
+   "ventajas": [
+    "instalado en ETAP/EDAR",
+    "barato"
+   ],
+   "limitaciones": [
+    "muy dependiente de polímero, pH, MON",
+    "en 10 ETAP reales no se observó reducción consistente por CFS"
+   ],
+   "riesgos": [
+    "coagulantes poliméricos pueden aportar MPs"
+   ],
+   "fuentes_riesgo": [
+    "npj2025",
+    "xue2021"
+   ],
+   "verificacion": [
+    {
+     "cifra": "8,28–98,2 %",
+     "ref": "pu2023",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "<2 % sedimentación Al2(SO4)3; 13,6 % PolyDADMAC",
+     "ref": "zhang2020",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "91 % coagulación + arena; coagulante ≈0,0594 ¥/t",
+     "ref": "zhao2024",
+     "estado": "fragmento_busqueda",
+     "nota": ""
+    },
+    {
+     "cifra": "CFS no fue barrera consistente",
+     "ref": "npj2025",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": ">80 % en ETAP con más etapas",
+     "ref": "xue2021",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "electrocoagulacion",
+   "familia": "coagulacion",
+   "tecnologia": "Electrocoagulación (ánodos Al/Fe)",
+   "mecanismo": "Generación in situ de hidróxidos metálicos + electroflotación por H2",
+   "rango_tamano": "",
+   "eficiencia": "8,24–99,4 % (rango revisado); 92 % fibras y 88 % fragmentos (agua sintética y de lavandería)",
+   "fuentes": [
+    "pu2023",
+    "senathirajah2023",
+    "kim2026"
+   ],
+   "trl_aprox": "4–6 (estimación)",
+   "coste_escalabilidad": "0,167 kWh/m3 y 0,0667 US$/m3 (laboratorio, agua de rechazo de OI)",
+   "ventajas": [
+    "sin dosificación química",
+    "compacto, apto para efluentes industriales/lavanderías"
+   ],
+   "limitaciones": [
+    "consumo de electrodos y energía",
+    "poca escala real"
+   ],
+   "riesgos": [
+    "fragmentación y posible generación de nanoplásticos; ROS alteran superficie"
+   ],
+   "fuentes_riesgo": [
+    "senathirajah2023"
+   ],
+   "fuentes_coste": [
+    "kim2026"
+   ],
+   "verificacion": [
+    {
+     "cifra": "8,24–99,4 %",
+     "ref": "pu2023",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "92 % fibras / 88 % fragmentos",
+     "ref": "senathirajah2023",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "95 % a 3 mA/cm2; 0,167 kWh/m3; 0,0667 US$/m3 (laboratorio, agua de rechazo OI)",
+     "ref": "kim2026",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "aglomeracion_organosilanos",
+   "familia": "coagulacion",
+   "tecnologia": "Aglomeración-fijación con organosilanos (Wasser 3.0 PE-X)",
+   "mecanismo": "Agentes híbridos sol-gel que aglomeran MPs en flóculos separables sin filtro",
+   "rango_tamano": "",
+   "eficiencia": "86±8 % piloto EDAR Mykonos; hasta 97,4 % masa / 99,1 % partículas en agua industrial (datos del fabricante, citando Clean Technol. 2025/2026)",
+   "fuentes": [
+    "wasser30"
+   ],
+   "trl_aprox": "6–7 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "piloto en EDAR real",
+    "sin membranas"
+   ],
+   "limitaciones": [
+    "rendimiento cae con baja concentración y matrices complejas",
+    "fuente principal es el propio desarrollador"
+   ],
+   "riesgos": [
+    "aglomerados no aptos para vertedero; valorización térmica"
+   ],
+   "fuentes_riesgo": [
+    "wasser30"
+   ],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "86±8 % piloto Mykonos",
+     "ref": "wasser30",
+     "estado": "fuente_comercial",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "biochar",
+   "familia": "adsorcion",
+   "tecnologia": "Biochar (lecho o enmienda de filtro de arena)",
+   "mecanismo": "Atrapamiento en poros, enredo, adherencia, interacciones hidrofóbicas/π–π/electrostáticas",
+   "rango_tamano": "probado con esferas de 10 µm",
+   "eficiencia": ">95 % (filtros de biochar) vs 60–80 % arena, esferas 10 µm; 86,6–92,6 % en columnas para escorrentía agrícola",
+   "fuentes": [
+    "wang2020",
+    "olubusoye2024"
+   ],
+   "trl_aprox": "4–5 (estimación)",
+   "coste_escalabilidad": "bajo coste de material (cualitativo); sin €/m3 publicado hallado",
+   "ventajas": [
+    "valoriza residuos",
+    "compatible con filtros existentes"
+   ],
+   "limitaciones": [
+    "regeneración",
+    "validación en agua real escasa"
+   ],
+   "riesgos": [
+    "desprendimiento de finos de biochar",
+    "fin de vida del adsorbente cargado"
+   ],
+   "fuentes_riesgo": [
+    "li2024"
+   ],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": ">95 % vs 60–80 % arena",
+     "ref": "wang2020",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "86,6–92,6 %",
+     "ref": "olubusoye2024",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "mofs",
+   "familia": "adsorcion",
+   "tecnologia": "MOFs soportados (p. ej., UiO-66-OH@espuma de melamina)",
+   "mecanismo": "Interacciones electrostáticas, puentes H y coordinación en espuma porosa",
+   "rango_tamano": "",
+   "eficiencia": "hasta 95,5±1,2 % (PVDF); 88,2 % PMMA; 85,7 % PS",
+   "fuentes": [
+    "chen2020mof"
+   ],
+   "trl_aprox": "3–4 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "reutilizable en ciclos",
+    "alta selectividad"
+   ],
+   "limitaciones": [
+    "coste y estabilidad de MOF en agua real"
+   ],
+   "riesgos": [
+    "lixiviación de metales/ligandos"
+   ],
+   "fuentes_riesgo": [],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "95,5±1,2 % PVDF",
+     "ref": "chen2020mof",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "nanomateriales_magneticos",
+   "familia": "adsorcion",
+   "tecnologia": "Nanopartículas magnéticas hidrofóbicas (Fe)",
+   "mecanismo": "Adsorción hidrofóbica + separación magnética",
+   "rango_tamano": "10 µm–>1 mm",
+   "eficiencia": "92 % (PE/PS 10–20 µm); 93 % agua de mar >1 mm; 84 % agua dulce; 78 % sedimento",
+   "fuentes": [
+    "grbic2019"
+   ],
+   "trl_aprox": "3–4 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "recuperación sencilla",
+    "reutilización potencial"
+   ],
+   "limitaciones": [
+    "dosificación/recuperación a gran caudal no demostrada"
+   ],
+   "riesgos": [
+    "pérdida de nanopartículas al medio"
+   ],
+   "fuentes_riesgo": [],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "92/93/84/78 %",
+     "ref": "grbic2019",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "esponjas",
+   "familia": "adsorcion",
+   "tecnologia": "Esponjas (quitina/óxido de grafeno, etc.)",
+   "mecanismo": "Interacciones electrostáticas, puentes H, π–π; difusión intraparticular",
+   "rango_tamano": "PS 1 µm",
+   "eficiencia": "89,8 % PS neutro (24 h); 72,4 % y 88,9 % PS carboxilado/aminado tras 3 ciclos",
+   "fuentes": [
+    "sun2020"
+   ],
+   "trl_aprox": "3 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "biodegradable/reutilizable"
+   ],
+   "limitaciones": [
+    "cinética lenta (24 h)",
+    "solo partículas modelo"
+   ],
+   "riesgos": [],
+   "fuentes_riesgo": [],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "89,8 % PS",
+     "ref": "sun2020",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "ozonizacion",
+   "familia": "degradacion",
+   "tecnologia": "Ozonización (y ozonización catalítica)",
+   "mecanismo": "Oxidación directa por O3 y por •OH",
+   "rango_tamano": "",
+   "eficiencia": "83 % de eliminación en efluente secundario (pH 7, 10 ppm O3, 60 min); ozonización catalítica: 70 % mineralización de nanoplásticos de PS",
+   "fuentes": [
+    "topkaya2025",
+    "nieto2024"
+   ],
+   "trl_aprox": "9 (proceso); 4–5 para MPs (estimación)",
+   "coste_escalabilidad": "0,094 €/m3 (cálculo energético de laboratorio, MPs 200–5000 µm); 4ª etapa ozono escala real Suiza 0,07–0,15 CHF/m3 (plantas grandes, no específico de MPs; ver 03_costes)",
+   "ventajas": [
+    "ya presente en ETAP/4ª etapa EDAR"
+   ],
+   "limitaciones": [
+    "PVC/PTFE resistentes; mineralización incompleta"
+   ],
+   "riesgos": [
+    "fragmentación en nanoplásticos",
+    "subproductos de oxidación"
+   ],
+   "fuentes_riesgo": [
+    "wieland2025"
+   ],
+   "fuentes_coste": [
+    "topkaya2025",
+    "vsa2024"
+   ],
+   "verificacion": [
+    {
+     "cifra": "83 % (pH 7, 10 ppm, 60 min); coste 0,094 €/m3 (energía, laboratorio, MPs 200–5000 µm)",
+     "ref": "topkaya2025",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "70 % mineralización NPs PS",
+     "ref": "nieto2024",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "PTFE/PVC resistentes",
+     "ref": "wieland2025",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "fenton_persulfato_hidrotermal",
+   "familia": "degradacion",
+   "tecnologia": "POA: Fenton/foto-Fenton, persulfato, electro-Fenton, Fenton hidrotermal",
+   "mecanismo": "Radicales •OH / SO4•− atacan cadena polimérica",
+   "rango_tamano": "100–200 µm (PVC, electro-Fenton)",
+   "eficiencia": "Fenton hidrotermal 98,43 % pérdida de masa en 24 h; electro-Fenton-persulfato 91,3 % PET en 12 h; electro-Fenton TiO2/grafito 56 % pérdida de masa PVC y 75 % decloración (100 °C, 6 h); Fenton 60 min: efecto modesto, PP resistente",
+   "fuentes": [
+    "singh2024",
+    "lin2024",
+    "miao2020",
+    "fenton_water2024"
+   ],
+   "trl_aprox": "3–4 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "destrucción (no solo transferencia)"
+   ],
+   "limitaciones": [
+    "condiciones severas (pH 3, 100 °C+)",
+    "matrices reales poco estudiadas"
+   ],
+   "riesgos": [
+    "mineralización incompleta; pérdida de masa ≠ mineralización",
+    "lixiviación de aditivos"
+   ],
+   "fuentes_riesgo": [
+    "he2023"
+   ],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "98,43 %/24 h",
+     "ref": "singh2024",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "91,3 % PET/12 h",
+     "ref": "lin2024",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "56 % masa PVC; 75 % decloración",
+     "ref": "miao2020",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "Fenton 60 min efecto modesto",
+     "ref": "fenton_water2024",
+     "estado": "fragmento_busqueda",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "fotocatalisis",
+   "familia": "degradacion",
+   "tecnologia": "Fotocatálisis (ZnO, TiO2/ZnO)",
+   "mecanismo": "Pares e−/h+ bajo luz generan ROS que oxidan la superficie",
+   "rango_tamano": "",
+   "eficiencia": "ZnO: oxidación/fragilización LDPE, sin mineralización verificada; TiOx/ZnO: pérdida de masa completa en 480–816 h (sin demostrar mineralización)",
+   "fuentes": [
+    "tofa2019",
+    "he2023"
+   ],
+   "trl_aprox": "2–4 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "puede usar luz solar/visible"
+   ],
+   "limitaciones": [
+    "tiempos de cientos de horas",
+    "contacto sólido-sólido ineficiente"
+   ],
+   "riesgos": [
+    "fragmentación a nanoplásticos",
+    "UV/H2O2 aumenta toxicidad del agua tratada"
+   ],
+   "fuentes_riesgo": [
+    "na2021"
+   ],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "ZnO oxidación LDPE",
+     "ref": "tofa2019",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "pérdida de masa completa 480–816 h",
+     "ref": "he2023",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "plasma_no_termico",
+   "familia": "degradacion",
+   "tecnologia": "Plasma no térmico (DBD, descarga nanosegundo)",
+   "mecanismo": "Especies reactivas (O, •OH, O3), UV y electrones",
+   "rango_tamano": "",
+   "eficiencia": "1,4–11,3 % pérdida de masa PP/LDPE en 30 min (plasma frío); 83 % pérdida de masa PS en 5 min (descarga ns); degradación completa 0,1 g PE en 3 h (DBD en aire)",
+   "fuentes": [
+    "velasquez2024",
+    "plasma2024",
+    "kim2025"
+   ],
+   "trl_aprox": "2–3 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "sin reactivos",
+    "rápido"
+   ],
+   "limitaciones": [
+    "alta energía",
+    "escala de gramos"
+   ],
+   "riesgos": [
+    "subproductos gaseosos; mineralización a verificar con CO2"
+   ],
+   "fuentes_riesgo": [
+    "iervolino2026"
+   ],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "1,4–11,3 % en 30 min",
+     "ref": "velasquez2024",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "83 % PS en 5 min",
+     "ref": "plasma2024",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "0,1 g PE en 3 h",
+     "ref": "kim2025",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "enzimas_petasa_cutinasa",
+   "familia": "biodegradacion",
+   "tecnologia": "Enzimas (FAST-PETase, LCC-cutinasa)",
+   "mecanismo": "Hidrólisis de enlaces éster de PET a TPA/EG",
+   "rango_tamano": "probado en films/fragmentos/textil, no en MPs ambientales",
+   "eficiencia": "LCC: ≥90 % despolimerización PET pretratado en <10 h; FAST-PETase: PET de 51 productos despolimerizado en 1 semana a 50 °C",
+   "fuentes": [
+    "tournier2020",
+    "lu2022"
+   ],
+   "trl_aprox": "7–8 para reciclaje PET; 2–3 para MPs en agua (estimación)",
+   "coste_escalabilidad": "planta Carbios Longlaville (50.000 t/año) paralizada a la espera de cierre financiero (H1 2026)",
+   "fuentes_coste": [
+    "carbios2026"
+   ],
+   "ventajas": [
+    "condiciones suaves",
+    "monómeros recuperables"
+   ],
+   "limitaciones": [
+    "solo poliésteres (PET); PE/PP/PS no",
+    "PET cristalino requiere pretratamiento"
+   ],
+   "riesgos": [
+    "MPs mixtos no hidrolizables"
+   ],
+   "fuentes_riesgo": [],
+   "verificacion": [
+    {
+     "cifra": "≥90 % en <10 h; 16,7 g TA/L/h",
+     "ref": "tournier2020",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "51 productos en 1 semana",
+     "ref": "lu2022",
+     "estado": "resumen",
+     "nota": ""
+    },
+    {
+     "cifra": "Longlaville en pausa (H1 2026)",
+     "ref": "carbios2026",
+     "estado": "fuente_comercial",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "bacterias_hongos",
+   "familia": "biodegradacion",
+   "tecnologia": "Bacterias y hongos (Bacillus, Pseudomonas, Aspergillus, Zalerion)",
+   "mecanismo": "Biofilm, oxidación enzimática y asimilación",
+   "rango_tamano": "",
+   "eficiencia": "LDPE 9,26 %/30 d (B. subtilis); PE 6,25 %/30 d (P. aeruginosa); LDPE 35 %/90 d (A. clavatus); PE 43 %/14 d (Z. maritimum)",
+   "fuentes": [
+    "sust2023"
+   ],
+   "trl_aprox": "2–4 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "bajo consumo energético"
+   ],
+   "limitaciones": [
+    "tasas lentas (% por mes)",
+    "pérdida de peso no prueba mineralización"
+   ],
+   "riesgos": [
+    "fragmentación; metabolitos"
+   ],
+   "fuentes_riesgo": [],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "6,25–43 % pérdida de peso",
+     "ref": "sust2023",
+     "estado": "fuente_secundaria",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "microalgas",
+   "familia": "biodegradacion",
+   "tecnologia": "Microalgas (biofloculación/heteroagregación)",
+   "mecanismo": "EPS y carga superficial agregan MPs; posible degradación",
+   "rango_tamano": "",
+   "eficiencia": "Scenedesmus abundans: 84 % PS, 87 % PLA, 98 % PMMA; Chlorella vulgaris: 84 % PE (pH 10)",
+   "fuentes": [
+    "gao2023",
+    "esmaeili2023"
+   ],
+   "trl_aprox": "3–4 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "integrable con lagunaje/tratamiento de nutrientes"
+   ],
+   "limitaciones": [
+    "tiempos de retención largos",
+    "toxicidad de MPs para algas"
+   ],
+   "riesgos": [
+    "biomasa residual cargada de MPs"
+   ],
+   "fuentes_riesgo": [
+    "gao2023"
+   ],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "84/87/98 %",
+     "ref": "gao2023",
+     "estado": "fuente_secundaria",
+     "nota": "cifras de Scenedesmus citadas por la reseña, no por el estudio original"
+    },
+    {
+     "cifra": "84 % PE pH 10",
+     "ref": "esmaeili2023",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "compostaje_hipertermofilo_lodos",
+   "familia": "lodos_suelos",
+   "tecnologia": "Compostaje hipertermófilo de lodos (>70 °C)",
+   "mecanismo": "Bio-oxidación por Thermus, Bacillus, Geobacillus",
+   "rango_tamano": "",
+   "eficiencia": "43,7 % de eliminación de MPs en lodo en 45 d (escala real); PS 7,3 % en 56 d (laboratorio)",
+   "fuentes": [
+    "chen2020comp"
+   ],
+   "trl_aprox": "7 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "aborda el sumidero principal (lodo)"
+   ],
+   "limitaciones": [
+    "eliminación parcial"
+   ],
+   "riesgos": [
+    "MPs residuales al suelo vía compost"
+   ],
+   "fuentes_riesgo": [],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "43,7 % en 45 d",
+     "ref": "chen2020comp",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "microrobots_magneticos",
+   "familia": "emergente",
+   "tecnologia": "Microrobots magnéticos vivos (bacterias magnetotácticas AMB-1)",
+   "mecanismo": "Enjambre 3D por campo magnético rotatorio; captura por adhesión y retirada magnética",
+   "rango_tamano": "50 nm–~10 µm",
+   "eficiencia": "83–89 % PS micro/nano; 60 % PET; 96 % MPs de exfoliante (1 h); 77 % en agua de río",
+   "fuentes": [
+    "song2025"
+   ],
+   "trl_aprox": "2–3 (estimación)",
+   "coste_escalabilidad": "",
+   "ventajas": [
+    "captura nanoplásticos"
+   ],
+   "limitaciones": [
+    "volúmenes de laboratorio",
+    "requiere bobinas electromagnéticas"
+   ],
+   "riesgos": [
+    "liberación de biomasa (endotoxinas medidas bajas)"
+   ],
+   "fuentes_riesgo": [
+    "song2025"
+   ],
+   "fuentes_coste": [],
+   "verificacion": [
+    {
+     "cifra": "83–89 %, 60 %, 96 %, 77 %",
+     "ref": "song2025",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  }
+ ],
+ "tareas": [
+  {
+   "id": "t1",
+   "texto": "extraer tablas de eficiencia por tamaño/forma/polímero de bodzek2024, bodzek2025 y sccwrp2024 a base de datos propia",
+   "estado": "pendiente",
+   "refs": [
+    "bodzek2024",
+    "bodzek2025",
+    "sccwrp2024"
+   ]
+  },
+  {
+   "id": "t2",
+   "texto": "protocolo de medida REMPLAST-Q definido en 04_plan_proyecto (alineado con DD 2024/1441 y Directiva 2024/3019)",
+   "estado": "hecho_v2",
+   "refs": [
+    "dd2024_1441",
+    "uwwtd2024"
+   ]
+  },
+  {
+   "id": "t3",
+   "texto": "priorizar tecnologías para ensayo: propuesta en 04_plan_proyecto (arena vs arena+biochar, coagulación/EC, UF como referencia)",
+   "estado": "propuesto_requiere_decision",
+   "refs": []
+  },
+  {
+   "id": "t4",
+   "texto": "diseñar ensayos de degradación con balance de carbono (CO2/COT) y cuantificación de nanoplásticos",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t5",
+   "texto": "costes €/m3: recopilados en 03_costes (generales, no específicos de MPs)",
+   "estado": "hecho_v2",
+   "refs": [
+    "iglesias2017",
+    "vsa2024"
+   ]
+  },
+  {
+   "id": "t6",
+   "texto": "obtener texto completo de las fuentes marcadas RES/FRAG (bibliotecas, préstamo interbibliotecario o autores)",
+   "estado": "pendiente",
+   "refs": []
+  }
+ ],
+ "riesgos": [
+  {
+   "id": "r1_comparabilidad",
+   "texto": "% dependientes del método y tamaño mínimo",
+   "estado": "",
+   "refs": [
+    "npj2025",
+    "xie2024"
+   ]
+  },
+  {
+   "id": "r2_transferencia_lodo",
+   "texto": "la separación física desplaza MPs al lodo y al suelo agrícola",
+   "estado": "",
+   "refs": [
+    "carnevale2024",
+    "nizzetto2016"
+   ]
+  },
+  {
+   "id": "r3_nanoplasticos",
+   "texto": "EC, ozono, UV/H2O2 y POA pueden fragmentar MPs en NPs",
+   "estado": "",
+   "refs": [
+    "senathirajah2023",
+    "wieland2025",
+    "na2021"
+   ]
+  },
+  {
+   "id": "r4_mineralizacion_incompleta",
+   "texto": "pérdida de masa no demuestra mineralización",
+   "estado": "",
+   "refs": [
+    "iervolino2026",
+    "he2023"
+   ]
+  },
+  {
+   "id": "r5_autoaporte",
+   "texto": "membranas y coagulantes poliméricos pueden liberar MPs",
+   "estado": "",
+   "refs": [
+    "maliwan2025",
+    "npj2025"
+   ]
+  },
+  {
+   "id": "r6_sesgo_fuente",
+   "texto": "datos de proveedores y partículas modelo sobreestiman la eficiencia en agua real",
+   "estado": "",
+   "refs": [
+    "wasser30"
+   ]
+  },
+  {
+   "id": "r7_evidencia_contradictoria_mbr",
+   "texto": ">99 % en campañas cortas vs sin diferencia significativa a largo plazo",
+   "estado": "",
+   "refs": [
+    "talvitie2017",
+    "sturm2025"
+   ]
+  }
+ ],
+ "decisiones": [
+  {
+   "id": "d1",
+   "texto": "eficiencia por etapa y tamaño mínimo como metadatos obligatorios de cada cifra",
+   "estado": "propuesta",
+   "refs": []
+  },
+  {
+   "id": "d2",
+   "texto": "distinguir 'eliminación' (separación) de 'degradación' (mineralización)",
+   "estado": "propuesta",
+   "refs": []
+  },
+  {
+   "id": "d3",
+   "texto": "TRL como estimación propia a validar por el equipo",
+   "estado": "propuesta",
+   "refs": []
+  },
+  {
+   "id": "d4",
+   "texto": "selección de tecnologías para piloto (ver 04_plan_proyecto, decisión dp3)",
+   "estado": "pendiente_usuario",
+   "refs": []
+  }
+ ],
+ "proximo_paso": [
+  "revisar con el usuario las decisiones de 04_plan_proyecto y conseguir texto completo de las fuentes RES/FRAG prioritarias (bodzek2024, egea2023, pu2023, senathirajah2023)"
+ ],
+ "huecos_evidencia": [
+  "costes €/m3 específicos de MPs prácticamente inexistentes [iglesias2017][vuori2022]",
+  "nanoplásticos <1 µm: casi sin datos a escala real; la mayoría de estudios miden >10–125 µm [sccwrp2024][npj2025]",
+  "degradación en matrices reales con balance de carbono: escasa [iervolino2026]",
+  "biochar en filtros a escala real: sin datos de campo [wang2020][li2024]"
+ ],
+ "cambios_v2": [
+  "referencias unificadas con clave (referencias.md); todos los DOI comprobados en Crossref",
+  "González-Camejo corregido a 2023 (J. Water Process Eng. 51:103452)",
+  "Carnevale Miino 2024 (STOTEN 930:172675) y Bodzek & Bodzek 2025 (Membranes 15:82) identificados (antes solo URL)",
+  "Olubusoye: DOI sin sufijo /full",
+  "Talvitie 2017 y Tournier 2020: metadatos confirmados y cifras comprobadas en texto completo",
+  "MBR: aclarado que Sturm 2025 no midió el afluente del MBR",
+  "añadidos coste de ozono 0,094 €/m3 (Topkaya), costes generales de MBR/filtración (Iglesias 2017), EC (Kim 2026) y estado_verificacion por cifra"
+ ]
+}

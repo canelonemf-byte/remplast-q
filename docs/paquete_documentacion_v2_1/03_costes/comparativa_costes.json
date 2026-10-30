@@ -1,0 +1,402 @@
+{
+ "meta": {
+  "proyecto": "REMPLAST-Q",
+  "usuario": "Lázaro López Paz",
+  "documento": "comparativa_costes_tecnologias_microplasticos",
+  "version": "v1",
+  "fecha": "2026-10-18",
+  "idioma": "es",
+  "leyenda_verificacion": "estado_verificacion: TC=cifra comprobada en texto completo; RES=solo resumen/abstract; SEC=fuente secundaria (reseña que cita a otro); COM=fuente comercial/proveedor; FRAG=fragmento de buscador o página no leída completa; OFI=texto oficial (EUR-Lex/BOE); EST=estimación propia justificada",
+  "regla": "sin cifras inventadas: \"\" = sin dato localizado; las monedas y años se mantienen como en la fuente (sin conversión ni actualización por inflación)",
+  "aviso": "casi ningún coste es específico de MPs: son costes generales de la tecnología (campo especifico_mps)"
+ },
+ "objetivo": [
+  "comparar CAPEX/OPEX/energía de las tecnologías candidatas para la barrera de MPs",
+  "señalar qué cifra es específica de MPs, general de la tecnología o comercial"
+ ],
+ "datos_clave": [
+  {
+   "id": "opex_menor",
+   "dato": "entre los procesos con fuente revisada por pares o informe técnico, los OPEX más bajos por m3 son filtración en profundidad (0,08–0,12 €/m3 para tren completo) y 4ª etapa (0,02–0,09 CHF/m3 de explotación); MBR y UF terciaria son más caros (0,18–0,45 €/m3)",
+   "refs": [
+    "iglesias2017",
+    "vsa2024"
+   ],
+   "estado_verificacion": "fuente_secundaria"
+  },
+  {
+   "id": "energia",
+   "dato": "energía: filtración por gravedad 0,097 < UF 0,156 << MBR 0,6–1,2 kWh/m3",
+   "refs": [
+    "gcamejo2023",
+    "iglesias2017"
+   ],
+   "estado_verificacion": "fragmento_busqueda"
+  },
+  {
+   "id": "coste_eficacia",
+   "dato": "el análisis coste-eficacia finlandés sitúa MBR + incineración de fango como la opción más coste-efectiva",
+   "refs": [
+    "vuori2022"
+   ],
+   "estado_verificacion": "resumen"
+  },
+  {
+   "id": "hueco",
+   "dato": "no hay costes publicados de filtros de arena con biochar ni de DAF terciario para MPs (\"\")",
+   "refs": [],
+   "estado_verificacion": "estimacion"
+  }
+ ],
+ "tabla_costes_agua": [
+  {
+   "id": "filtro_arena_rapido",
+   "tecnologia": "Filtración rápida en arena (dentro de tren CRT: coagulación + lamelas + filtración en profundidad + desinfección)",
+   "capex": "~115 €/(m3·d) a 5.000–10.000 m3/d; ~100 €/(m3·d) a 20.000 m3/d",
+   "opex": "0,08–0,12 €/m3",
+   "energia": "0,097 kWh/m3 (filtración rápida por gravedad)",
+   "eficiencia_mps": "97 % (EDAR terciario) [talvitie2017]",
+   "especifico_mps": "no (coste general de regeneración)",
+   "contexto": "EDAR españolas, € de 2011",
+   "fuentes": [
+    "iglesias2017",
+    "gcamejo2023",
+    "talvitie2017"
+   ],
+   "verificacion": [
+    {
+     "cifra": "CAPEX/OPEX CRT",
+     "ref": "iglesias2017",
+     "estado": "fuente_secundaria",
+     "nota": "leído en resumen ampliado del autor en thembrsite, no en el artículo"
+    },
+    {
+     "cifra": "0,097 kWh/m3",
+     "ref": "gcamejo2023",
+     "estado": "fragmento_busqueda",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "filtro_arena_biochar",
+   "tecnologia": "Filtro de arena con capa/enmienda de biochar",
+   "capex": "",
+   "opex": "",
+   "energia": "",
+   "eficiencia_mps": ">95 % vs 60–80 % arena (laboratorio) [wang2020]",
+   "especifico_mps": "",
+   "contexto": "sin datos de coste publicados localizados; el coste incremental sería el del medio filtrante y su reposición",
+   "fuentes": [
+    "wang2020",
+    "li2024"
+   ],
+   "verificacion": []
+  },
+  {
+   "id": "daf",
+   "tecnologia": "Flotación por aire disuelto",
+   "capex": "",
+   "opex": "",
+   "energia": "1,5–2 kWh/m3",
+   "eficiencia_mps": "95 % [talvitie2017]",
+   "especifico_mps": "no",
+   "contexto": "valor de proveedor",
+   "fuentes": [
+    "daf_vendor",
+    "talvitie2017"
+   ],
+   "verificacion": [
+    {
+     "cifra": "1,5–2 kWh/m3",
+     "ref": "daf_vendor",
+     "estado": "fuente_comercial",
+     "nota": "no revisado por pares"
+    }
+   ]
+  },
+  {
+   "id": "mbr",
+   "tecnologia": "Biorreactor de membrana (sustituye secundario)",
+   "capex": "700–960 €/(m3·d) (8.000–15.000 m3/d); 2.000–3.200 €/(m3·d) a 1.000–2.000 m3/d; hasta 625 €/(m3·d) y 94 €/h-e >10.000 m3/d",
+   "opex": "0,2–0,45 €/m3 (reposición de membranas 0,02–0,04 €/m3); total comparado 0,32 €/m3",
+   "energia": "0,6–1,2 kWh/m3 (0,8–1,2 en comparativa de trenes)",
+   "eficiencia_mps": "99,9 % en campaña corta [talvitie2017]; sin diferencia significativa a largo plazo [sturm2025]",
+   "especifico_mps": "no",
+   "contexto": "EDAR españolas, € de 2011; comparado con fangos activos 0,4–0,8 kWh/m3",
+   "fuentes": [
+    "iglesias2017",
+    "talvitie2017",
+    "sturm2025",
+    "vuori2022"
+   ],
+   "verificacion": [
+    {
+     "cifra": "CAPEX/OPEX/energía MBR",
+     "ref": "iglesias2017",
+     "estado": "fuente_secundaria",
+     "nota": "resumen ampliado del autor"
+    },
+    {
+     "cifra": "MBR + incineración más coste-efectivo",
+     "ref": "vuori2022",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "uf_terciaria",
+   "tecnologia": "Ultrafiltración terciaria (tren ART)",
+   "capex": "~430 €/(m3·d)",
+   "opex": "0,18 €/m3 (terciario); total con secundario 0,40 €/m3",
+   "energia": "0,156 kWh/m3 (UF)",
+   "eficiencia_mps": "UF 99,3–100 % en ETAP [npj2025]",
+   "especifico_mps": "no",
+   "contexto": "EDAR españolas, € de 2011",
+   "fuentes": [
+    "iglesias2017",
+    "gcamejo2023",
+    "npj2025"
+   ],
+   "verificacion": [
+    {
+     "cifra": "430 €/(m3·d); 0,18 €/m3",
+     "ref": "iglesias2017",
+     "estado": "fuente_secundaria",
+     "nota": ""
+    },
+    {
+     "cifra": "0,156 kWh/m3",
+     "ref": "gcamejo2023",
+     "estado": "fragmento_busqueda",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "filtro_discos",
+   "tecnologia": "Filtro de discos/tela",
+   "capex": "",
+   "opex": "0,010–0,045 €/m3",
+   "energia": "0,008–0,020 kWh/m3",
+   "eficiencia_mps": "40–98,5 % [talvitie2017]",
+   "especifico_mps": "no",
+   "contexto": "valor de proveedor",
+   "fuentes": [
+    "cloth_vendor",
+    "talvitie2017"
+   ],
+   "verificacion": [
+    {
+     "cifra": "OPEX y energía",
+     "ref": "cloth_vendor",
+     "estado": "fuente_comercial",
+     "nota": "no revisado por pares"
+    }
+   ]
+  },
+  {
+   "id": "electrocoagulacion",
+   "tecnologia": "Electrocoagulación",
+   "capex": "",
+   "opex": "0,0667 US$/m3",
+   "energia": "0,167 kWh/m3 (3 mA/cm2)",
+   "eficiencia_mps": "95 % (laboratorio, agua de rechazo de OI) [kim2026]",
+   "especifico_mps": "sí (laboratorio)",
+   "contexto": "laboratorio; no extrapolable a escala real",
+   "fuentes": [
+    "kim2026"
+   ],
+   "verificacion": [
+    {
+     "cifra": "0,0667 US$/m3; 0,167 kWh/m3",
+     "ref": "kim2026",
+     "estado": "resumen",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "ozono_4a_etapa",
+   "tecnologia": "Ozonización (4ª etapa micro-contaminantes)",
+   "capex": "inversión 20–300 CHF/h-e (rango de procesos de 4ª etapa)",
+   "opex": "explotación 0,02–0,09 CHF/m3; anual con capital 0,07–0,27 CHF/m3; ozono observado 0,07–0,15 CHF/m3 (plantas grandes) y 0,15–0,22 CHF/m3 (pequeñas)",
+   "energia": "",
+   "eficiencia_mps": "83 % laboratorio [topkaya2025]; riesgo de fragmentación",
+   "especifico_mps": "no (coste de micro-contaminantes en Suiza); 0,094 €/m3 específico de MPs pero de laboratorio y solo energía [topkaya2025]",
+   "contexto": "EDAR suizas en servicio (2024)",
+   "fuentes": [
+    "vsa2024",
+    "topkaya2025"
+   ],
+   "verificacion": [
+    {
+     "cifra": "cifras VSA",
+     "ref": "vsa2024",
+     "estado": "texto_completo",
+     "nota": ""
+    },
+    {
+     "cifra": "0,094 €/m3",
+     "ref": "topkaya2025",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "cap_4a_etapa",
+   "tecnologia": "Carbón activo en polvo (CAP) 4ª etapa",
+   "capex": "incluido en 20–300 CHF/h-e",
+   "opex": "CAP observado 0,09–0,16 CHF/m3 (grandes) y 0,10–0,26 CHF/m3 (pequeñas)",
+   "energia": "",
+   "eficiencia_mps": "sin diferencia significativa del efluente con CAP vs convencional [sturm2025]",
+   "especifico_mps": "no",
+   "contexto": "EDAR suizas en servicio (2024)",
+   "fuentes": [
+    "vsa2024",
+    "sturm2025"
+   ],
+   "verificacion": [
+    {
+     "cifra": "cifras VSA",
+     "ref": "vsa2024",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  },
+  {
+   "id": "cuarta_etapa_ue",
+   "tecnologia": "4ª etapa a escala UE (agregado)",
+   "capex": "",
+   "opex": "1.480–1.800 M€/año en 2045 (UE, todas las plantas obligadas)",
+   "energia": "",
+   "eficiencia_mps": "no aplica",
+   "especifico_mps": "no",
+   "contexto": "estimación JRC para la Directiva 2024/3019",
+   "fuentes": [
+    "jrc2025quat"
+   ],
+   "verificacion": [
+    {
+     "cifra": "1,48–1,8 mil M€/año",
+     "ref": "jrc2025quat",
+     "estado": "texto_completo",
+     "nota": ""
+    }
+   ]
+  }
+ ],
+ "tabla_costes_lodos": [
+  {
+   "id": "aplicacion_agricola",
+   "coste": "15–20 €/t húmeda",
+   "fuentes": [
+    "iglesias2017"
+   ],
+   "estado": "fuente_secundaria"
+  },
+  {
+   "id": "compostaje",
+   "coste": "30–35 €/t húmeda",
+   "fuentes": [
+    "iglesias2017"
+   ],
+   "estado": "fuente_secundaria"
+  },
+  {
+   "id": "secado_termico",
+   "coste": "40–60 €/t húmeda",
+   "fuentes": [
+    "iglesias2017"
+   ],
+   "estado": "fuente_secundaria"
+  },
+  {
+   "id": "monoincineracion",
+   "coste": "~350 €/t MS (160–510)",
+   "fuentes": [
+    "jrc2023sludge"
+   ],
+   "estado": "texto_completo"
+  },
+  {
+   "id": "pirolisis",
+   "coste": "",
+   "fuentes": [
+    "keller2024"
+   ],
+   "estado": "resumen"
+  }
+ ],
+ "estimacion_ejemplo": {
+  "id": "ejemplo_energia_piloto",
+  "supuesto": "piloto de filtración por gravedad a 1 m3/h durante 12 meses (supuesto propio)",
+  "calculo": "8.760 m3 × 0,097 kWh/m3 ≈ 850 kWh/año",
+  "refs": [
+   "gcamejo2023"
+  ],
+  "estado_verificacion": "estimacion",
+  "nota": "ejemplo de cómo dimensionar; el precio de la electricidad debe darlo la EDAR"
+ },
+ "tareas": [
+  {
+   "id": "t1",
+   "texto": "pedir a la EDAR piloto costes reales de energía, reactivos y gestión de lodos",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t2",
+   "texto": "pedir oferta a proveedores de biochar y de filtros (discos, DAF) para el piloto",
+   "estado": "pendiente",
+   "refs": []
+  },
+  {
+   "id": "t3",
+   "texto": "convertir monedas y actualizar a € actuales con índice oficial (IPC/IPRI) cuando se use en presupuesto",
+   "estado": "pendiente",
+   "refs": []
+  }
+ ],
+ "riesgos": [
+  {
+   "id": "r1_no_especifico",
+   "texto": "los costes son de la tecnología, no de eliminar MPs; el coste por MP eliminado no se puede calcular sin datos propios",
+   "estado": "",
+   "refs": [
+    "iglesias2017"
+   ]
+  },
+  {
+   "id": "r2_antiguedad",
+   "texto": "costes españoles en € de 2011",
+   "estado": "",
+   "refs": [
+    "iglesias2017"
+   ]
+  },
+  {
+   "id": "r3_comercial",
+   "texto": "DAF y discos solo con fuente de proveedor",
+   "estado": "",
+   "refs": [
+    "daf_vendor",
+    "cloth_vendor"
+   ]
+  }
+ ],
+ "decisiones": [
+  {
+   "id": "d1",
+   "texto": "¿qué caudal de diseño usar para escalar costes (tamaño de la EDAR objetivo)?",
+   "estado": "pendiente_usuario",
+   "refs": []
+  }
+ ],
+ "proximo_paso": [
+  "con el caudal de la EDAR objetivo, recalcular CAPEX/OPEX de las 3 opciones del plan con ofertas reales"
+ ]
+}

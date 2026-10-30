@@ -1,0 +1,1079 @@
+{
+ "meta": {
+  "documento": "referencias_remplast_q",
+  "fecha": "2026-10-18",
+  "total": 90,
+  "nota": "crossref=verificado: título, revista, volumen, páginas y año comprobados en api.crossref.org el 18-10-2026; no_aplica: informe/norma/web sin DOI; no_encontrado: DOI no localizado, se cita por URL"
+ },
+ "referencias": [
+  {
+   "id": "acarer2023",
+   "cita": "Acarer S (2023). A review of microplastic removal from water and wastewater by membrane technologies. Water Sci. Technol. 88:199–219.",
+   "enlace": "https://doi.org/10.2166/wst.2023.186",
+   "crossref": "verificado",
+   "acceso_abierto": "sí (IWA)",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "aei2026",
+   "cita": "BOE-B-2026-31900. Extracto convocatoria 2026 Proyectos de Generación de Conocimiento (AEI).",
+   "enlace": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-31900",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "aei2026web",
+   "cita": "Ministerio de Ciencia: Proyectos de Generación de Conocimiento 2026.",
+   "enlace": "https://www.ciencia.gob.es/Convocatorias/2026/PID2026.html",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "aei_conv2026",
+   "cita": "AEI (2026). Resolución de 30-09-2026 de la Presidencia de la AEI por la que se aprueba la convocatoria de tramitación anticipada para el año 2026 de ayudas a «Proyectos de Generación de Conocimiento» y actuaciones para formación de personal investigador predoctoral (texto completo firmado, CSV GEN-bdee-fb5c-cbfb-ddaa-67eb-2c3c-e925-db73).",
+   "enlace": "https://www.aei.gob.es/sites/default/files/convocatory_info/file/2026-10/Convocatoria_ProyectosGeneraci%C3%B3nConocimiento_Predoc_2026_fda.pdf",
+   "crossref": "no_aplica",
+   "acceso_abierto": "sí",
+   "nota": "leído íntegro; MD5 idéntico a la copia de la UMH",
+   "usado_en": [
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "aei_correccion2026",
+   "cita": "AEI (2026). Corrección de errores de la Resolución de 30-09-2026 (solo afecta al anexo V.2, proyectos tipo I).",
+   "enlace": "https://www.aei.gob.es/sites/default/files/convocatory_info/file/2026-10/correcci%C3%B3n%20errores%20PID%202026_.pdf",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "aei_instr2025",
+   "cita": "AEI (2025). Instrucciones para rellenar la memoria científico-técnica, proyectos individuales (convocatoria 2025; modelo 2026 aún no publicado en la web a 18-10-2026).",
+   "enlace": "https://www.aei.gob.es/sites/default/files/convocatory_info/2025-10/Instrucciones-MemoriaCT-individual-2025-v2.pdf",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "aei_web2026",
+   "cita": "AEI. Página oficial de la convocatoria Proyectos de Generación de Conocimiento 2026 (documentos, plazos, límites de páginas).",
+   "enlace": "https://www.aei.gob.es/convocatorias/buscador-convocatorias/proyectos-generacion-conocimiento-actuaciones-formacion-9",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "bodzek2024",
+   "cita": "Bodzek M, et al. (2024). Microplastics in Wastewater Treatment Plants: Characteristics, Occurrence and Removal Technologies. Water 16:3574.",
+   "enlace": "https://doi.org/10.3390/w16243574",
+   "crossref": "verificado",
+   "acceso_abierto": "sí (MDPI; descarga bloqueada desde el entorno)",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "bodzek2025",
+   "cita": "Bodzek M, Bodzek P (2025). Remediation of Micro- and Nanoplastics by Membrane Technologies. Membranes 15:82.",
+   "enlace": "https://doi.org/10.3390/membranes15030082",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11943828/",
+   "nota": "v1 la citaba solo por URL PMC",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "carbios2026",
+   "cita": "Carbios (24-09-2026). Carbios reports first-half 2026 results (nota de prensa).",
+   "enlace": "https://www.globenewswire.com/news-release/2026/09/24/3367956/0/en/carbios-reports-first-half-2026-results.html",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "carnevale2024",
+   "cita": "Carnevale Miino M, Galafassi S, Zullo R, Torretta V, Rada EC (2024). Microplastics removal in wastewater treatment plants: A review of the different approaches to limit their release in the environment. Sci. Total Environ. 930:172675.",
+   "enlace": "https://doi.org/10.1016/j.scitotenv.2024.172675",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "autoría y volumen corregidos respecto a v1 (antes solo URL)",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "02_lodos",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "cdti_pid",
+   "cita": "CDTI. Proyectos de I+D (ficha 2026).",
+   "enlace": "https://www.cdti.es/sites/default/files/2026-02/1._proyectos_de_id_2026_02.pdf",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "chand2021",
+   "cita": "Chand R, et al. (2021). The occurrence and fate of microplastics in a mesophilic anaerobic digester receiving sewage sludge, grease, and fatty slurries. Sci. Total Environ. 798:149287.",
+   "enlace": "https://doi.org/10.1016/j.scitotenv.2021.149287",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "chen2020comp",
+   "cita": "Chen Z, et al. (2020). Enhanced in situ biodegradation of microplastics in sewage sludge using hyperthermophilic composting technology. J. Hazard. Mater. 384:121271.",
+   "enlace": "https://doi.org/10.1016/j.jhazmat.2019.121271",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "chen2020mof",
+   "cita": "Chen YJ, et al. (2020). Metal–organic framework-based foams for efficient microplastics removal. J. Mater. Chem. A 8:14644–14652.",
+   "enlace": "https://doi.org/10.1039/D0TA04891G",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "cl6_2026",
+   "cita": "CORDIS. HORIZON-CL6-2026-01-ZEROPOLLUTION-01-two-stage: Decontaminate and bioremediate aquatic pollution.",
+   "enlace": "https://cordis.europa.eu/programme/id/HORIZON_HORIZON-CL6-2026-01-ZEROPOLLUTION-01-two-stage",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "cloth_vendor",
+   "cita": "Filter Systems. Wastewater Treatment OPEX: Cost Benchmark per m³ (web comercial).",
+   "enlace": "https://filter-systems.com/en/knowledge/operating-cost-per-cubic-metre-the-items-that-actually-move-the-number",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes"
+   ]
+  },
+  {
+   "id": "daf_vendor",
+   "cita": "Sigma DAF Clarifiers. Preguntas frecuentes DAF (web comercial).",
+   "enlace": "https://sigmadafclarifiers.com/en/sistemas-daf/preguntas-frecuentes-daf/",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes"
+   ]
+  },
+  {
+   "id": "dd2024_1441",
+   "cita": "Decisión Delegada (UE) 2024/1441 de la Comisión, metodología para medir microplásticos en agua destinada al consumo humano (DO L 21-05-2024).",
+   "enlace": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024D1441",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "02_lodos",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "dir_ct",
+   "cita": "Ministerio de Ciencia. Directorio oficial de Centros Tecnológicos y CAIT.",
+   "enlace": "https://aplicaciones.ciencia.gob.es/inforct/",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "egea2023",
+   "cita": "Egea-Corbacho A, et al. (2023). Occurrence, identification and removal of microplastics in a WWTP compared to an advanced MBR technology: full-scale pilot plant. J. Environ. Chem. Eng. 11:109644.",
+   "enlace": "https://doi.org/10.1016/j.jece.2023.109644",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "esmaeili2023",
+   "cita": "Esmaeili Nasrabadi A, et al. (2023). Utilizing Chlorella vulgaris algae as an eco-friendly coagulant for efficient removal of polyethylene microplastics. Heliyon 9:e22338.",
+   "enlace": "https://doi.org/10.1016/j.heliyon.2023.e22338",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10692900/",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "fecyt_cvn",
+   "cita": "FECYT. Editor CVN (generación del CVA-AEI).",
+   "enlace": "https://cvn.fecyt.es/",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "fenton_water2024",
+   "cita": "Evaluation of Fenton, Photo-Fenton and Fenton-like Processes in Degradation of PE, PP, and PVC Microplastics. Water 16(5):673 (2024).",
+   "enlace": "https://www.mdpi.com/2073-4441/16/5/673",
+   "crossref": "no_encontrado",
+   "acceso_abierto": "",
+   "nota": "DOI no extraído",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "gao2023",
+   "cita": "Gao (2023). Feasibility, challenges, and future prospects of microalgae-based bioremediation technique for removing microplastics from wastewater. Front. Bioeng. Biotechnol. 11:1288439.",
+   "enlace": "https://doi.org/10.3389/fbioe.2023.1288439",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10621199/",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "gcamejo2023",
+   "cita": "González-Camejo J, et al. (2023). Feasibility of Rapid Gravity Filtration and Membrane Ultrafiltration for the Removal of Microplastics and Microlitter in Sewage and Wastewater from Plastic Industry. J. Water Process Eng. 51:103452.",
+   "enlace": "https://doi.org/10.1016/j.jwpe.2022.103452",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "año corregido a 2023 (v1 indicaba 2022)",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "grbic2019",
+   "cita": "Grbic J, et al. (2019). Magnetic Extraction of Microplastics from Environmental Samples. Environ. Sci. Technol. Lett. 6:68–72.",
+   "enlace": "https://doi.org/10.1021/acs.estlett.8b00671",
+   "crossref": "verificado",
+   "acceso_abierto": "https://utoronto.scholaris.ca/server/api/core/bitstreams/7f1cfa29-b968-4d3e-9e65-983b5a2483e2/content",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "he2023",
+   "cita": "He Y, Rehman AU, Xu M, et al. (2023). Photocatalytic degradation of different types of microplastics by TiOx/ZnO tetrapod photocatalysts. Heliyon 9:e22562.",
+   "enlace": "https://doi.org/10.1016/j.heliyon.2023.e22562",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10687295/",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "htc_acs2024",
+   "cita": "Exploring the Potential of Hydrothermal Treatment for Microplastics Removal in Digestate. ACS Sustainable Chem. Eng. 12(38):14187 (2024).",
+   "enlace": "https://pubs.acs.org/ascecg/article/12/38/14187/143565/Exploring-the-Potential-of-Hydrothermal-Treatment",
+   "crossref": "no_encontrado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "hybrid_acs",
+   "cita": "Hybrid Wastewater Treatment: Efficiency and Challenges in Microplastic Removal. ACS ES&T Water 6(5):2619.",
+   "enlace": "https://pubs.acs.org/aewcaa/article/6/5/2619/5070745/Hybrid-Wastewater-Treatment-Efficiency-and",
+   "crossref": "no_encontrado",
+   "acceso_abierto": "",
+   "nota": "DOI y autores no verificados",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "iervolino2026",
+   "cita": "Iervolino (2026). Non-thermal DBD plasma for the degradation of microplastics suspended in water: evidence from CO2 quantification. Chem. Eng. J. 528:172474.",
+   "enlace": "https://doi.org/10.1016/j.cej.2025.172474",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "iglesias2017",
+   "cita": "Iglesias R, Simón P, Moragas L, Arce A, Rodriguez-Roda I (2017). Cost comparison of full-scale water reclamation technologies with an emphasis on membrane bioreactors. Water Sci. Technol. 75(11):2562–2570.",
+   "enlace": "https://doi.org/10.2166/wst.2017.132",
+   "crossref": "verificado",
+   "acceso_abierto": "resumen ampliado: https://www.thembrsite.com/features/cost-comparison-of-full-scale-water-reclamation-technologies-with-an-emphasis-on-membrane-bioreactors",
+   "nota": "costes en € de 31-12-2011, plantas españolas",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "02_lodos",
+    "03_costes",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "iso16094_2",
+   "cita": "ISO 16094-2:2025 Water quality — Analysis of microplastic in water — Part 2: Vibrational spectroscopy methods for waters with low content of suspended solids including drinking water.",
+   "enlace": "https://www.iso.org/standard/84460.html",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "iso16094_3",
+   "cita": "ISO/FDIS 16094-3 Water quality — Analysis of microplastic in water — Part 3: Thermo-analytical methods (en elaboración).",
+   "enlace": "https://www.iso.org/standard/84463.html",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "jose2025",
+   "cita": "Jose (2025). Hydrothermal carbonization as a promising approach towards the removal of polyethylene microplastics and trace organic contaminants from wastewater sludge. J. Environ. Chem. Eng. 13:118262.",
+   "enlace": "https://doi.org/10.1016/j.jece.2025.118262",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "jrc2023sludge",
+   "cita": "JRC (2023). Feasibility study in support of future policy developments of the Sewage Sludge Directive (86/278/EEC). JRC134591.",
+   "enlace": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC134591/JRC134591_01.pdf",
+   "crossref": "no_aplica",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "02_lodos",
+    "03_costes",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "jrc2025quat",
+   "cita": "Pistocchi A (2025). Updated estimation of the costs of quaternary wastewater treatment in the EU. JRC144745, EUR 40579.",
+   "enlace": "https://data.europa.eu/doi/10.2760/6476421",
+   "crossref": "no_aplica",
+   "acceso_abierto": "sí",
+   "nota": "DOI DataCite (no indexado en Crossref)",
+   "usado_en": [
+    "03_costes"
+   ]
+  },
+  {
+   "id": "keller2024",
+   "cita": "Keller AA, et al. (2024). Elimination of microplastics, PFAS, and PPCPs from biosolids via pyrolysis to produce biochar: Feasibility and techno-economic analysis. Sci. Total Environ. 947:174773.",
+   "enlace": "https://doi.org/10.1016/j.scitotenv.2024.174773",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos",
+    "03_costes",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "kim2025",
+   "cita": "Kim (2025). Degradation of polyethylene microplastics using high-repetition-rate pulsed DBD plasma in air under mild conditions. J. Phys. D: Appl. Phys. 58:315203.",
+   "enlace": "https://doi.org/10.1088/1361-6463/adef64",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "kim2026",
+   "cita": "Kim (2026). Parametric study on electro-coagulation for efficient removal of microplastics from reverse osmosis wastewater. Water Sci. Technol. 93:903–915.",
+   "enlace": "https://doi.org/10.2166/wst.2026.239",
+   "crossref": "verificado",
+   "acceso_abierto": "sí (IWA)",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes",
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "leachate2024",
+   "cita": "Membrane technology as a strategy for microplastics removal from landfill leachate: a review. Water Sci. Technol. 90(9):2469 (2024).",
+   "enlace": "https://iwaponline.com/wst/article/90/9/2469/105412/Membrane-technology-as-a-strategy-for",
+   "crossref": "no_encontrado",
+   "acceso_abierto": "",
+   "nota": "DOI no extraído; autoría no verificada",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "lera2025",
+   "cita": "Lera (2025). Mesophilic anaerobic digestion of mixed sludge in CSTR and AnMBR systems: A perspective on microplastics fate. J. Environ. Manage. 375:124250.",
+   "enlace": "https://doi.org/10.1016/j.jenvman.2025.124250",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "lessa2024",
+   "cita": "Lessa Belone MC, et al. (2024). Effects of mesophilic and thermophilic anaerobic digestion of sewage sludge on different polymers. Sci. Total Environ. 907:168014.",
+   "enlace": "https://doi.org/10.1016/j.scitotenv.2023.168014",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "li2024",
+   "cita": "Li (2024). The Removal and Mitigation Effects of Biochar on Microplastics in Water and Soils. Sustainability 16:9749.",
+   "enlace": "https://doi.org/10.3390/su16229749",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes"
+   ]
+  },
+  {
+   "id": "life2026",
+   "cita": "CINEA. LIFE Calls for proposals 2026.",
+   "enlace": "https://cinea.ec.europa.eu/life-calls-proposals-2026_en",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "life_sap",
+   "cita": "Call fiche LIFE-2026-SAP-ENV (Circular Economy and Quality of Life).",
+   "enlace": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/life/wp-call/2026/call-fiche_life-2026-sap-env_en.pdf",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "lin2024",
+   "cita": "Lin Y, Zhang Y, Wang Y, et al. (2024). Efficient degradation and mineralization of PET microplastics ... electro-Fenton-activated persulfate oxidation system. J. Hazard. Mater. 478:135635.",
+   "enlace": "https://doi.org/10.1016/j.jhazmat.2024.135635",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "lofty2022",
+   "cita": "Lofty J, et al. (2022). Microplastics removal from a primary settler tank in a WWTP and estimations of contamination onto European agricultural land via sewage sludge recycling. Environ. Pollut. 304:119198.",
+   "enlace": "https://doi.org/10.1016/j.envpol.2022.119198",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "lu2022",
+   "cita": "Lu H, Diaz DJ, Czarnecki NJ, et al. (2022). Machine learning-aided engineering of hydrolases for PET depolymerization. Nature 604:662–667.",
+   "enlace": "https://doi.org/10.1038/s41586-022-04599-z",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "volumen/páginas confirmados en Crossref",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "maliwan2025",
+   "cita": "Maliwan T, Hu J (2025). Release of microplastics from polymeric ultrafiltration membrane system for drinking water treatment under different operating conditions. Water Research 274:123047.",
+   "enlace": "https://doi.org/10.1016/j.watres.2024.123047",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "miao2020",
+   "cita": "Miao F, et al. (2020). Degradation of polyvinyl chloride microplastics via an electro-Fenton-like system with a TiO2/graphite cathode. J. Hazard. Mater. 399:123023.",
+   "enlace": "https://doi.org/10.1016/j.jhazmat.2020.123023",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "miteco2025",
+   "cita": "MITECO (2025). Consulta pública previa del proyecto de RD que modifica el RD 1310/1990 y deroga la Orden AAA/1072/2013 (fin de plazo 21-11-2025).",
+   "enlace": "https://www.miteco.gob.es/es/calidad-y-evaluacion-ambiental/participacion-publica/consulta-publica-sobre-el-proyecto-del-real-decreto-que-modifica.html",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "na2021",
+   "cita": "Na SH, Kim MJ, Kim JT, et al. (2021). Microplastic removal in conventional drinking water treatment processes: Performance, mechanism, and potential risk. Water Research 202:117417.",
+   "enlace": "https://doi.org/10.1016/j.watres.2021.117417",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "ni2020",
+   "cita": "Ni BJ, Zhu ZR, Li W, et al. (2020). Microplastics Mitigation in Sewage Sludge through Pyrolysis: The Role of Pyrolysis Temperature. Environ. Sci. Technol. Lett. 7:961–967.",
+   "enlace": "https://doi.org/10.1021/acs.estlett.0c00740",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "nieto2024",
+   "cita": "Nieto-Sandoval J, et al. (2024). Enhancing nanoplastics removal by metal ion-catalyzed ozonation. Chem. Eng. J. Adv. 19:100621.",
+   "enlace": "https://doi.org/10.1016/j.ceja.2024.100621",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "nizzetto2016",
+   "cita": "Nizzetto L, Futter M, Langaas S (2016). Are Agricultural Soils Dumps for Microplastics of Urban Origin? Environ. Sci. Technol. 50:10777–10779.",
+   "enlace": "https://doi.org/10.1021/acs.est.6b04140",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "02_lodos",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "npj2025",
+   "cita": "Balkenbusch F, et al. (2025). Microplastic removal across ten drinking water treatment facilities and distribution systems. npj Clean Water 8:103.",
+   "enlace": "https://doi.org/10.1038/s41545-025-00531-w",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12673860/",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "olubusoye2024",
+   "cita": "Olubusoye BS, et al. (2024). Removal of microplastics from agricultural runoff using biochar: a column feasibility study. Front. Environ. Sci. 12:1388606.",
+   "enlace": "https://doi.org/10.3389/fenvs.2024.1388606",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "DOI corregido (v1 incluía sufijo /full)",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "plasma2024",
+   "cita": "Polystyrene (PS) Degradation Induced by Nanosecond Electric Discharge in Air in Contact with PS/Water. Plasma 7(1):4.",
+   "enlace": "https://www.mdpi.com/2571-6182/7/1/4",
+   "crossref": "no_encontrado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "prus2024",
+   "cita": "Prus (2024). Microplastics in Sewage Sludge: Worldwide Presence in Biosolids ... Including the Hydrothermal Carbonization Process. Energies 17:4219.",
+   "enlace": "https://doi.org/10.3390/en17174219",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "02_lodos",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "prus2025",
+   "cita": "Prus (2025). The Effect of Hydrothermal Carbonization Temperature on Microplastic Content in Digested Sewage Sludge. Energies 18:5105.",
+   "enlace": "https://doi.org/10.3390/en18195105",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "pu2023",
+   "cita": "Pu (2023). Coagulation technologies for separation of microplastics in water: current status. J. Phys.: Conf. Ser. 2608:012056.",
+   "enlace": "https://doi.org/10.1088/1742-6596/2608/1/012056",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "rd1310",
+   "cita": "Real Decreto 1310/1990 por el que se regula la utilización de los lodos de depuración en el sector agrario (texto consolidado).",
+   "enlace": "https://www.boe.es/buscar/act.php?id=BOE-A-1990-26490",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "reusemp3",
+   "cita": "Portal de Recerca UdG. Proyecto ReUseMP3, MCIU, 01-09-2021 a 31-08-2024, 210.830,40 €.",
+   "enlace": "https://recerca.udg.edu/ca/projects/integrating-nature-inspired-water-reuse-strategies-with-advanced--4/",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "referencia de escala presupuestaria de un proyecto estatal sobre MPs",
+   "usado_en": [
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "sccwrp2024",
+   "cita": "SCCWRP (2024). Characterizing the Removal of Microplastics by California Wastewater Treatment Plants: Implications for Management Strategies. Technical Report 1378.",
+   "enlace": "https://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/1378_MicroplasticsWastewaterPlants.pdf",
+   "crossref": "no_aplica",
+   "acceso_abierto": "sí (informe)",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "02_lodos",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "senathirajah2023",
+   "cita": "Senathirajah K, et al. (2023). Fate and transformation of microplastics due to electrocoagulation treatment: Impacts of polymer type and shape. Environ. Pollut. 334:122159.",
+   "enlace": "https://doi.org/10.1016/j.envpol.2023.122159",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "shen2021",
+   "cita": "Shen M, et al. (2021). Can incineration completely eliminate plastic wastes? Microplastics and heavy metals in bottom ash and fly ash. Sci. Total Environ. 779:146528.",
+   "enlace": "https://doi.org/10.1016/j.scitotenv.2021.146528",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "residuos sólidos urbanos, no lodos",
+   "usado_en": [
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "singh2024",
+   "cita": "Singh (2024). Hybrid Oxidation of Microplastics with Fenton and Hydrothermal Reactions. ACS ES&T Water 4:1688–1700.",
+   "enlace": "https://doi.org/10.1021/acsestwater.3c00742",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "song2025",
+   "cita": "Song SJ, Kim J, Gabor R, Zboril R, Pumera M (2025). Magnetically Driven Living Microrobot Swarms for Aquatic Micro- and Nanoplastic Cleanup. ACS Nano 19:27259–27269.",
+   "enlace": "https://doi.org/10.1021/acsnano.5c04045",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12333422/",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "sturm2025",
+   "cita": "Sturm MT, Argyropoulou D, Myers E, et al. (2025). Comparative Long-Term Monitoring of Microplastics in the Effluent of Three Different WWTPs with Two, Three, and Four Treatment Stages. Water 17(5):711.",
+   "enlace": "https://doi.org/10.3390/w17050711",
+   "crossref": "verificado",
+   "acceso_abierto": "sí (leído en mdpi.com)",
+   "nota": "autores empleados de Wasser 3.0 (conflicto de interés declarado)",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "sun2020",
+   "cita": "Sun C, et al. (2020). Fabrication of robust and compressive chitin and graphene oxide sponges for removal of microplastics with different functional groups. Chem. Eng. J. 393:124796.",
+   "enlace": "https://doi.org/10.1016/j.cej.2020.124796",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "sust2023",
+   "cita": "Systematic Review of Degradation Processes for Microplastics: Progress and Prospects. Sustainability 15(17):12698 (2023).",
+   "enlace": "https://www.mdpi.com/2071-1050/15/17/12698",
+   "crossref": "no_encontrado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "swd2023",
+   "cita": "Comisión Europea (2023). Evaluation of the Sewage Sludge Directive 86/278/EEC. SWD(2023) 158 final.",
+   "enlace": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=SWD%3A2023%3A158%3AFIN",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "02_lodos",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "talvitie2017",
+   "cita": "Talvitie J, Mikola A, Koistinen A, Setälä O (2017). Solutions to microplastic pollution – Removal of microplastics from wastewater effluent with advanced wastewater treatment technologies. Water Research 123:401–407.",
+   "enlace": "https://doi.org/10.1016/j.watres.2017.07.005",
+   "crossref": "verificado",
+   "acceso_abierto": "https://erepo.uef.fi/bitstreams/481f3ee7-c253-46ef-9be9-77b845ab365c/download",
+   "nota": "volumen/páginas confirmados en Crossref; manuscrito aceptado leído",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "tofa2019",
+   "cita": "Tofa TS, et al. (2019). Visible light photocatalytic degradation of microplastic residues with zinc oxide nanorods. Environ. Chem. Lett. 17:1341–1346.",
+   "enlace": "https://doi.org/10.1007/s10311-019-00859-z",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "topkaya2025",
+   "cita": "Topkaya E, Arslan A, Veli S, Kuru S, Sezer M (2025). Removal of Microplastics by Ozone Oxidation from Urban Wastewater Using Taguchi Experimental Design. Water Air Soil Pollut. 236:606.",
+   "enlace": "https://doi.org/10.1007/s11270-025-08249-8",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes",
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "tournier2020",
+   "cita": "Tournier V, Topham CM, Gilles A, et al. (2020). An engineered PET depolymerase to break down and recycle plastic bottles. Nature 580:216–219.",
+   "enlace": "https://doi.org/10.1038/s41586-020-2149-4",
+   "crossref": "verificado",
+   "acceso_abierto": "https://www.inrae.fr/sites/default/files/an_engineered_pet-depolymerase_to_break_down_and_recycle_plastic_bottles.pdf",
+   "nota": "volumen/páginas confirmados en Crossref; texto completo leído (INRAE)",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "uwwtd2024",
+   "cita": "Directiva (UE) 2024/3019 sobre tratamiento de aguas residuales urbanas (refundición), texto consolidado 12-12-2024.",
+   "enlace": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A02024L3019-20241212",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "02_lodos",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "velasquez2024",
+   "cita": "Velasquez JA, Bao Y, Huang JY (2024). Atmospheric cold plasma as a novel approach to remediating microplastics pollution in water. Environ. Pollut. 356:124390.",
+   "enlace": "https://doi.org/10.1016/j.envpol.2024.124390",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "vsa2024",
+   "cita": "Hunziker Betatech AG para VSA (2024). Evaluation of the energy and cost figures of processes for the elimination of micropollutants in WWTPs. Informe técnico 1490.26 (28-09-2024).",
+   "enlace": "https://micropoll.ch/wp-content/uploads/2025/03/Energy-and-cost-key-figures-MP-treatment.pdf",
+   "crossref": "no_aplica",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "vuori2022",
+   "cita": "Vuori L, Ollikainen M (2022). How to remove microplastics in wastewater? A cost-effectiveness analysis. Ecological Economics 192:107246.",
+   "enlace": "https://doi.org/10.1016/j.ecolecon.2021.107246",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes",
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "wang2020",
+   "cita": "Wang Z, Sedighi M, Lea-Langton A (2020). Filtration of microplastic spheres by biochar: removal efficiency and immobilisation mechanisms. Water Research 184:116165.",
+   "enlace": "https://doi.org/10.1016/j.watres.2020.116165",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pure.manchester.ac.uk/ws/files/173957430/Wang_Sedighi_Lealangton_clean_revised_manuscript.pdf",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "03_costes",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "wasser30",
+   "cita": "Wasser 3.0 gGmbH. Microplastic monitoring for municipal WWTPs (página técnica, revisada ago-2026).",
+   "enlace": "https://wasserdreinull.de/en/offers-and-services/wastewater-treatment/",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "fuente del desarrollador de la tecnología PE-X",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "wieland2025",
+   "cita": "Wieland (2025). Ozone-mediated breakdown of microplastics in aqueous environments. J. Anal. At. Spectrom. 40:2870–2878.",
+   "enlace": "https://doi.org/10.1039/d5ja00226e",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12418336/",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "wp_cl6",
+   "cita": "Horizon Europe Work Programme 2026-2027, Cluster 6.",
+   "enlace": "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-9-food-bioeconomy-natural-resources-agriculture-and-environment_horizon-2026-2027_en.pdf",
+   "crossref": "no_aplica",
+   "acceso_abierto": "",
+   "nota": "",
+   "usado_en": [
+    "04_plan_proyecto"
+   ]
+  },
+  {
+   "id": "xie2024",
+   "cita": "Xie (2024). Analysing micro- and nanoplastics with cutting-edge infrared spectroscopy techniques: a critical review. Anal. Methods 16:2177–2197.",
+   "enlace": "https://doi.org/10.1039/D3AY01808C",
+   "crossref": "verificado",
+   "acceso_abierto": "sí (RSC html)",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "xu2022",
+   "cita": "Xu (2022). Microplastic Degradation in Sewage Sludge by Hydrothermal Carbonization: Efficiency and Mechanisms. Chemosphere 297:134203.",
+   "enlace": "https://doi.org/10.1016/j.chemosphere.2022.134203",
+   "crossref": "verificado",
+   "acceso_abierto": "",
+   "nota": "solo título/metadatos verificados; cifras no extraídas",
+   "usado_en": [
+    "02_lodos"
+   ]
+  },
+  {
+   "id": "xue2021",
+   "cita": "Xue J, et al. (2021). What have we known so far about microplastics in drinking water treatment? A timely review. Front. Environ. Sci. Eng. 16:58.",
+   "enlace": "https://doi.org/10.1007/s11783-021-1492-5",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8527969/",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento"
+   ]
+  },
+  {
+   "id": "zhang2020",
+   "cita": "Zhang Y, Diehl A, Lewandowski A, Gopalakrishnan K, Baker T (2020). Removal efficiency of micro- and nanoplastics (180 nm–125 μm) during drinking water treatment. Sci. Total Environ. 720:137383.",
+   "enlace": "https://doi.org/10.1016/j.scitotenv.2020.137383",
+   "crossref": "verificado",
+   "acceso_abierto": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7241221/",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  },
+  {
+   "id": "zhao2024",
+   "cita": "Zhao (2024). Research on Effect of Microplastics Removal through Combination of Coagulation and Sand Filtration. E3S Web Conf. 598:01005.",
+   "enlace": "https://doi.org/10.1051/e3sconf/202459801005",
+   "crossref": "verificado",
+   "acceso_abierto": "sí",
+   "nota": "",
+   "usado_en": [
+    "01_revision_tratamiento",
+    "04_plan_proyecto",
+    "05_solicitud_aei"
+   ]
+  }
+ ]
+}
